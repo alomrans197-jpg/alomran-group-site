@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>العمران كروب</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #2c3e50;
+    }
+    header {
+      background-color: #34495e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav {
+      background-color: #2c3e50;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #1abc9c;
+    }
+    .hero {
+      background-image: url('https://via.placeholder.com/1200x400');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px #000;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    section h2 {
+      margin-bottom: 30px;
+      font-size: 1.8em;
+      color: #34495e;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .item {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 10px;
+    }
+    .item img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .item p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .service-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 800px;
+      margin: auto;
+      text-align: right;
+    }
+    .service-item {
+      background-color: #f0f0f0;
+      padding: 15px;
+      border-radius: 6px;
+      font-weight: bold;
+      color: #34495e;
+    }
+    .service-item.highlight {
+      background-color: #dff9fb;
+      border: 2px solid #1abc9c;
+      color: #2c3e50;
+    }
+    footer {
+      background-color: #34495e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>العمران كروب</h1>
+    <p>تنفيذ كافة أعمال الترميم والإكساء والديكور بخبرات فنية عالية</p>
+  </header>
+
+  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">الأبواب</a>
+    <a href="#">الصباغ</a>
+    <a href="#">الرخام</a>
+    <a href="#">الحجر</a>
+    <a href="#">السيراميك</a>
+    <a href="#">الألمنيوم</a>
+    <a href="#">الديكور</a>
+  </nav>
+
+  <div class="hero">
+    خبرة وجودة في كل تفصيلة
+  </div>
+
+  <section>
+    <h2>أنواع الأعمال</h2>
+    <div class="grid">
+      <div class="item">
+        <img src="https://via.placeholder.com/300x200" alt="الأبواب">
+        <p>الأبواب</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/300x200" alt="الصباغ">
+        <p>الدهان (الصباغ)</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/300x200" alt="الرخام">
+        <p>الرخام</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/300x200" alt="الحجر">
+        <p>الحجر</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/300x200" alt="السيراميك">
+        <p>السيراميك</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/300x200" alt="الألمنيوم">
+        <p>الألمنيوم</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/300x200" alt="الديكور">
+        <p>الديكور</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>خدماتنا</h2>
+    <div class="service-list">
+      <div class="service-item">✔️ تركيب وتصنيع الأبواب بأنواعها (خشب، معدنية، زجاجية)</div>
+      <div class="service-item">✔️ أعمال الدهان (الصباغ) باستخدام أفضل أنواع الطلاء</div>
+      <div class="service-item">✔️ تنفيذ الأرضيات والجدران بالرخام الطبيعي والمصنّع</div>
+      <div class="service-item">✔️ تركيب الحجر للواجهات الداخلية والخارجية</div>
+      <div class="service-item">✔️ فرش الأرضيات بالسيراميك والبورسلان بجودة عالية</div>
+      <div class="service-item">✔️ تصنيع وتركيب الألمنيوم للنوافذ والأبواب والواجهات</div>
+      <div class="service-item">✔️ تصميم وتنفيذ الديكور الداخلي والخارجي حسب الطلب</div>
+      <div class="service-item highlight">🌟 نستخدم أجود أنواع البضائع والخامات المتوفرة في السوق المحلي والعالمي لضمان أعلى جودة في التنفيذ، من الخشب والرخام إلى الأصباغ والألمنيوم والديكورات المتقدمة.</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 العمران كروب. جميع الحقوق محفوظة.
+  </footer>
+
+</body>
+</html>
