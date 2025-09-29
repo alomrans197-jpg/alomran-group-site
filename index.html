@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -15,19 +14,14 @@
     }
 
     header {
-      background-color: #6B0F1A; /* خمري */
-      color: #D4AF37; /* شامبيه */
+      background-color: #6B0F1A;
+      color: #D4AF37;
       padding: 40px 20px;
       text-align: center;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-
     nav {
-      background-color: #000000; /* أسود */
+      background-color: #000;
       padding: 10px;
       text-align: center;
     }
@@ -35,12 +29,12 @@
     nav a {
       color: #D4AF37;
       text-decoration: none;
-      margin: 0 15px;
-      font-size: 18px;
+      margin: 0 10px;
+      font-size: 16px;
     }
 
     nav a:hover {
-      color: #ffffff;
+      color: #fff;
       text-decoration: underline;
     }
 
@@ -58,11 +52,17 @@
       padding-bottom: 10px;
     }
 
+    h3 {
+      color: #6B0F1A;
+      margin-top: 40px;
+      font-size: 22px;
+    }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 15px;
-      margin-top: 30px;
+      margin-top: 20px;
     }
 
     .gallery img {
@@ -70,46 +70,11 @@
       height: auto;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.3s ease;
     }
 
     .gallery img:hover {
       transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    }
-
-    .services ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .services li {
-      background-color: #f0f0f0;
-      margin-bottom: 10px;
-      padding: 10px;
-      border-radius: 6px;
-      font-size: 18px;
-      border-right: 5px solid #D4AF37;
-    }
-
-    .more-button {
-      text-align: center;
-      margin: 30px 0;
-    }
-
-    .more-button a {
-      background-color: #6B0F1A;
-      color: #D4AF37;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
-    }
-
-    .more-button a:hover {
-      background-color: #800000;
-      color: #ffffff;
     }
 
     .contact {
@@ -117,8 +82,6 @@
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      text-align: right;
-      direction: rtl;
       margin-top: 40px;
     }
 
@@ -139,7 +102,7 @@
     }
 
     footer {
-      background-color: #000000;
+      background-color: #000;
       color: #D4AF37;
       text-align: center;
       padding: 20px;
@@ -154,115 +117,68 @@
   </header>
 
   <nav>
-    <a href="#gallery">معرض الصور</a>
-    <a href="#about">من نحن</a>
-    <a href="#services">أعمالنا</a>
+    <a href="#stone">الحجر</a>
+    <a href="#marble">الرخام</a>
+    <a href="#ceramic">السيراميك</a>
+    <a href="#aluminum">الألمنيوم</a>
+    <a href="#wood">أبواب خشب</a>
+    <a href="#paint">الدهانات</a>
+    <a href="#decor">الديكور</a>
     <a href="#contact">اتصل بنا</a>
   </nav>
 
+  <section id="gallery">
+    <h2>معرض الصور حسب الأقسام</h2>
 
+    <h3 id="stone">أعمال الحجر</h3>
+    <div class="gallery">
+      <img src="stone-1.jpg" alt="حجر 1">
+      <img src="stone-2.jpg" alt="حجر 2">
+      <img src="stone-3.jpg" alt="حجر 3">
     </div>
-    <div class="more-button">
-      <a href="#">عرض المزيد من الصور</a>
+
+    <h3 id="marble">أعمال الرخام</h3>
+    <div class="gallery">
+      <img src="marble-1.jpg" alt="رخام 1">
+      <img src="marble-2.jpg" alt="رخام 2">
+      <img src="marble-3.jpg" alt="رخام 3">
+    </div>
+
+    <h3 id="ceramic">أعمال السيراميك</h3>
+    <div class="gallery">
+      <img src="ceramic-1.jpg" alt="سيراميك 1">
+      <img src="ceramic-2.jpg" alt="سيراميك 2">
+      <img src="ceramic-3.jpg" alt="سيراميك 3">
+    </div>
+
+    <h3 id="aluminum">أعمال الألمنيوم</h3>
+    <div class="gallery">
+      <img src="aluminum-1.jpg" alt="ألمنيوم 1">
+      <img src="aluminum-2.jpg" alt="ألمنيوم 2">
+      <img src="aluminum-3.jpg" alt="ألمنيوم 3">
+    </div>
+
+    <h3 id="wood">أبواب خشب</h3>
+    <div class="gallery">
+      <img src="wood-1.jpg" alt="باب خشب 1">
+      <img src="wood-2.jpg" alt="باب خشب 2">
+      <img src="wood-3.jpg" alt="باب خشب 3">
+    </div>
+
+    <h3 id="paint">أعمال الدهانات</h3>
+    <div class="gallery">
+      <img src="paint-1.jpg" alt="دهان 1">
+      <img src="paint-2.jpg" alt="دهان 2">
+      <img src="paint-3.jpg" alt="دهان 3">
+    </div>
+
+    <h3 id="decor">ديكورات حديثة</h3>
+    <div class="gallery">
+      <img src="decor-1.jpg" alt="ديكور 1">
+      <img src="decor-2.jpg" alt="ديكور 2">
+      <img src="decor-3.jpg" alt="ديكور 3">
     </div>
   </section>
-
-  <section id="about">
-    <h2>من نحن</h2>
-    <p>
-      العمران كروب متخصص في تنفيذ كافة أعمال الترميم، الإكساء، الديكور، والتشطيب النهائي. نعمل بخبرات عالية وورشات متكاملة، ونستخدم مواد نوع أول لضمان الجودة والدقة في التنفيذ.
-    </p>
-  </section>
-
-  <section id="services" class="services">
-    <h2>أعمالنا</h2>
-    <ul>
-      <li>بناء من الأساس – تأسيس الهيكل الإنشائي الكامل</li>
-      <li>عمار بلوك – تركيب الجدران الداخلية والخارجية</li>
-      <li>صحيات – تمديدات المياه والصرف الصحي</li>
-      <li>تمديدات كهربائية – تأسيس الشبكة الكهربائية للمبنى</li>
-      <li>بلاط – تركيب الأرضيات بجميع أنواعها</li>
-      <li>رخام – أعمال الرخام الفاخر للمطابخ والواجهات</li>
-      <li>سيراميك – تغطية الجدران والأرضيات بالسيراميك</li>
-      <li>طينة ولياسة – تجهيز الجدران للدهان والتشطيب</li>
-      <li>أبواب خشب منجور – تصنيع وتركيب الأبواب الداخلية والخارجية</li>
-      <li>ألمنيوم – نوافذ، أبواب، واجهات ألمنيوم عالية الجودة</li>
-      <li>ديكورات جبسية وحديثة – تصميم داخلي احترافي</li>
-      <li>تدفئة مركزية – تركيب أنظمة التدفئة المتكاملة</li>
-      <li>عزل رطوبة – حماية المباني من تسرب المياه والرطوبة</li>
-      <li>تنشي المياه – معالجة وتوزيع المياه بشكل فعال</li>
-    </ul>
-  </section>
-<section id="gallery">
-  <h2>معرض الصور حسب الأقسام</h2>
-
-  <!-- القسم 1: الجرّ -->
-  <h3 style="color:#6B0F1A;">أعمال الجرّ والبلوك</h3>
-  <div class="gallery">
-    <img src="block (1).jpg" alt="جر 1">
-    <img src="block (2).jpg" alt="جر 2">
-    <img src="block (3).jpg" alt="جر 3">
-    <img src="block (4).jpg" alt="جر 4">
-  </div>
-
-  <!-- القسم 2: الرخام -->
-  <h3 style="color:#6B0F1A;">أعمال الرخام</h3>
-  <div class="gallery">
-    <img src="marble (1).jpg" alt="رخام 1">
-    <img src="marble (2).jpg" alt="رخام 2">
-    <img src="marble (3).jpg" alt="رخام 3">
-  </div>
-
-  <!-- القسم 3: السيراميك -->
-  <h3 style="color:#6B0F1A;">أعمال السيراميك</h3>
-  <div class="gallery">
-    <img src="ceramic (1).jpg" alt="سيراميك 1">
-    <img src="ceramic (2).jpg" alt="سيراميك 2">
-    <img src="ceramic (3).jpg" alt="سيراميك 3">
-    <img src="ceramic (4).jpg" alt="سيراميك 4">
-    <img src="ceramic (5).jpg" alt="سيراميك 5">
-    <img src="ceramic (6).jpg" alt="سيراميك 6">
-  </div>
-
-  <!-- القسم 4: الألمنيوم -->
-  <h3 style="color:#6B0F1A;">أعمال الألمنيوم</h3>
-  <div class="gallery">
-    <img src="aluminum (1).jpg" alt="ألمنيوم 1">
-    <img src="aluminum (2).jpg" alt="ألمنيوم 2">
-    <img src="aluminum (3).jpg" alt="ألمنيوم 3">
-    <img src="aluminum (4).jpg" alt="ألمنيوم 4">
-  </div>
-
-  <!-- القسم 5: أبواب خشب -->
-  <h3 style="color:#6B0F1A;">أبواب خشب منجور</h3>
-  <div class="gallery">
-    <img src="doors (1).jpg" alt="باب خشب 1">
-    <img src="doors (2).jpg" alt="باب خشب 2">
-    <img src="doors (3).jpg" alt="باب خشب 3">
-    <img src="doors (4).jpg" alt="باب خشب 4">
-    <img src="doors (5).jpg" alt="باب خشب 5">
-  </div>
-
-  <!-- القسم 6: الصباغ -->
-  <h3 style="color:#6B0F1A;">أعمال الصباغ والدهانات</h3>
-  <div class="gallery">
-    <img src="paint (1).jpg" alt="دهان 1">
-    <img src="paint (2).jpg" alt="دهان 2">
-    <img src="paint (3).jpg" alt="دهان 3">
-    <img src="paint (4).jpg" alt="دهان 4">
-    <img src="paint (5).jpg" alt="دهان 5">
-  </div>
-
-  <!-- القسم 7: الديكور -->
-  <h3 style="color:#6B0F1A;">ديكورات جبسية وحديثة</h3>
-  <div class="gallery">
-    <img src="decor (1).jpg" alt="ديكور 1">
-    <img src="decor (2).jpg" alt="ديكور 2">
-    <img src="decor (3).jpg" alt="ديكور 3">
-    <img src="decor (4).jpg" alt="ديكور 4">
-    <img src="decor (5).jpg" alt="ديكور 5">
-  </div>
-</section>
 
   <section id="contact" class="contact">
     <h2>اتصل بنا</h2>
@@ -294,3 +210,5 @@
 
 </body>
 </html>
+
+
