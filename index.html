@@ -206,6 +206,34 @@
       });
     });
   </script>
+<section id="order" style="padding: 60px 20px; background-color: #f9f5ef;">
+  <h2 style="text-align: center; color: #5c2a2a;">📝 طلب خدمة</h2>
+  <form style="max-width: 600px; margin: auto; background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+
+    <label for="name">الاسم الكامل:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">رقم الهاتف:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="services">الخدمات المطلوبة:</label>
+    <select id="services" name="services[]" multiple required style="height: 200px;">
+      <option value="حجر">🧱 أعمال الحجر</option>
+      <option value="سيراميك">🟫 تركيب السيراميك</option>
+      <option value="ألمنيوم">🪟 نوافذ وأبواب ألمنيوم</option>
+      <option value="خشب">🚪 أبواب خشب</option>
+      <option value="دهان">🎨 دهانات وصبغ</option>
+      <option value="رخام">🪨 تفصيل رخام</option>
+      <option value="ديكور">🛋️ ديكورات داخلية</option>
+    </select>
+    <small style="color: #777;">اضغط Ctrl أو Shift لاختيار أكثر من خدمة</small>
+
+    <label for="message">تفاصيل إضافية:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">إرسال الطلب</button>
+  </form>
+</section>
 
 </body>
 </html>
