@@ -2,232 +2,114 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>مكتب العمران للتعهدات العامة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Poppins&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
       margin: 0;
-      padding: 0;
-      direction: rtl;
-    }
-
-    header {
-      background-color: #6B0F1A;
-      color: #D4AF37;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .marquee {
-      background-color: #D4AF37;
-      color: #6B0F1A;
-      font-weight: bold;
-      font-size: 18px;
-      padding: 10px 0;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    nav {
-      background-color: #000;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: #D4AF37;
-      text-decoration: none;
-      margin: 0 10px;
-      font-size: 16px;
-    }
-
-    nav a:hover {
-      color: #fff;
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    section h2 {
-      color: #6B0F1A;
-      margin-bottom: 20px;
-      font-size: 28px;
-      border-bottom: 2px solid #D4AF37;
-      padding-bottom: 10px;
-    }
-
-    h3 {
-      color: #6B0F1A;
-      margin-top: 40px;
-      font-size: 22px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-
-    .contact {
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      margin-top: 40px;
-    }
-
-    .contact p {
-      font-size: 18px;
-      margin: 10px 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to bottom, #f4f4f4, #e0d8c3);
       color: #333;
     }
-
-    .contact a {
-      color: #6B0F1A;
-      text-decoration: none;
-    }
-
-    .contact a:hover {
-      text-decoration: underline;
-      color: #D4AF37;
-    }
-
-    footer {
-      background-color: #000;
-      color: #D4AF37;
-      text-align: center;
+    header {
+      background-color: #5c4434;
+      color: white;
       padding: 20px;
-      margin-top: 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1581091870622-1e7e8f3f5b3e');
+      background-size: cover;
+      background-position: center;
+      padding: 80px 20px;
+      text-align: center;
+      color: white;
+    }
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+    .cta-button {
+      background-color: #d4a373;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .cta-button:hover {
+      background-color: #c58c5c;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>العمران كروب</h1>
-    <p>مكتب العمران للتعهدات العامة – الترميم، الإكساء، الديكور، التشطيب النهائي</p>
+    <h1>مكتب العمران للتعهدات العامة</h1>
+    <p>بإشراف محمد الإبراهيم وعبدالله الإبراهيم</p>
   </header>
 
-  <div class="marquee">
-    <marquee behavior="scroll" direction="right" scrollamount="5">
-      أعمال العمار – الصحية – تمديدات الكهرباء – الحجر – السيراميك – الرخام – الألمنيوم – تركيب الرخام – ديكورات حديثة – صباغ – أبواب خشب – عزل رطوبة – تدفئة مركزية
-    </marquee>
-  </div>
-
-  <nav>
-    <a href="#gallery">معرض الصور</a>
-    <a href="#about">من نحن</a>
-    <a href="#services">أعمالنا</a>
-    <a href="#contact">اتصل بنا</a>
-  </nav>
-
-  <section id="about">
-    <h2>من نحن</h2>
-    <p>
-      العمران كروب متخصص في تنفيذ كافة أعمال الترميم، الإكساء، الديكور، والتشطيب النهائي. نعمل بخبرات عالية وورشات متكاملة، ونستخدم مواد نوع أول لضمان الجودة والدقة في التنفيذ.
-    </p>
+  <section class="hero">
+    <h2>نحن نبني الثقة قبل الجدران</h2>
+    <p>تنفيذ كافة أعمال الترميم، الإكساء، الديكور، والتشطيب النهائي بأعلى جودة</p>
+    <a href="#services"><button class="cta-button">استعرض خدماتنا</button></a>
   </section>
 
-  <section id="services">
-    <h2>أعمالنا</h2>
-    <ul>
-      <li>بناء من الأساس – تأسيس الهيكل الإنشائي الكامل</li>
-      <li>عمار بلوك – تركيب الجدران الداخلية والخارجية</li>
-      <li>صحيات – تمديدات المياه والصرف الصحي</li>
-      <li>تمديدات كهربائية – تأسيس الشبكة الكهربائية للمبنى</li>
-      <li>بلاط – تركيب الأرضيات بجميع أنواعها</li>
-      <li>رخام – أعمال الرخام الفاخر للمطابخ والواجهات</li>
-      <li>سيراميك – تغطية الجدران والأرضيات بالسيراميك</li>
-      <li>طينة ولياسة – تجهيز الجدران للدهان والتشطيب</li>
-      <li>أبواب خشب منجور – تصنيع وتركيب الأبواب الداخلية والخارجية</li>
-      <li>ألمنيوم – نوافذ، أبواب، واجهات ألمنيوم عالية الجودة</li>
-      <li>ديكورات جبسية وحديثة – تصميم داخلي احترافي</li>
-      <li>تدفئة مركزية – تركيب أنظمة التدفئة المتكاملة</li>
-      <li>عزل رطوبة – حماية المباني من تسرب المياه والرطوبة</li>
-      <li>تنشي المياه – معالجة وتوزيع المياه بشكل فعال</li>
-    </ul>
-<section id="contact" class="contact">
-  <h2>اتصل بنا</h2>
-  <p><strong>الاسم:</strong> محمد الإبراهيم</p>
-  <p><strong>رقم الهاتف:</strong> <a href="tel:+963995607888">+963995607888</a> (واتس آب)</p>
-  <p><strong>البريد الإلكتروني:</strong> <a href="mailto:alomran.s197@gmail.com">alomran.s197@gmail.com</a></p>
-  <p><strong>العنوان:</strong> سوريا – دمشق</p>
-</section>
-
-
-  <section id="gallery">
-    <h2>معرض الصور حسب الأقسام</h2>
-
-    <h3>أعمال الحجر</h3>
-    <div class="gallery">
-      <img src="images/stone/stone-1.jpg" alt="حجر 1">
-      <img src="images/stone/stone-2.jpg" alt="حجر 2">
-      <img src="images/stone/stone-12.jpg.jpg" alt="واجهة حجرية خارجية">
+  <section id="about" style="padding: 40px 20px; background-color: #e0d8c3;">
+    <h2 style="text-align: center; color: #5c4434;">👷‍♂️ من نحن</h2>
+    <div style="max-width: 800px; margin: auto; font-size: 1.1em; line-height: 1.8;">
+      <p>
+        مكتب العمران للتعهدات العامة هو مؤسسة متخصصة في تنفيذ كافة أعمال البناء، الترميم، الإكساء، الديكور، والتشطيب النهائي، بإشراف مباشر من المهندس <strong>محمد الإبراهيم</strong> والأستاذ <strong>عبدالله الإبراهيم</strong>.
+      </p>
+      <p>
+        نتميز بخبرة طويلة تمتد لأكثر من 20 عامًا في السوق السورية، ونلتزم بأعلى معايير الجودة والدقة في التنفيذ، مع الحرص على رضا العميل في كل مرحلة من مراحل العمل.
+      </p>
+      <p>
+        رؤيتنا هي أن نكون الخيار الأول للعملاء الباحثين عن الاحترافية والموثوقية، ورسالتنا هي تقديم خدمات متكاملة بأسلوب عصري وتقني يواكب تطورات السوق.
+      </p>
     </div>
+  </section>
 
-    <h3>أعمال الرخام</h3>
-    <div class="gallery">
-      <img src="images/marble/marble-1.jpg" alt="رخام 1">
-      <img src="images/marble/marble-2.jpg" alt="رخام 2">
-    </div>
-
-    <h3>أعمال السيراميك</h3>
-    <div class="gallery">
-      <img src="images/ceramic/ceramic-1.jpg" alt="سيراميك 1">
-      <img src="images/ceramic/ceramic-2.jpg" alt="سيراميك 2">
-    </div>
-
-    <h3>أعمال الألمنيوم</h3>
-    <div class="gallery">
-      <img src="images/aluminum/aluminum-1.jpg" alt="ألمنيوم 1">
-      <img src="images/aluminum/aluminum-2.jpg" alt="ألمنيوم 2">
-    </div>
-
-    <h3>أبواب خشب منجور</h3>
-    <div class="gallery">
-      <img src="images/wood/wood-1.jpg" alt="باب خشب 1">
-      <img src="images/wood/wood-2.jpg" alt="باب خشب 2">
-    </div>
-
-    <h3>أعمال الصباغ والدهانات</h3>
-    <div class="gallery">
-      <img src="images/paint/paint-1.jpg" alt="دهان 1">
-      <img src="images/paint/paint-2.jpg" alt="دهان 2">
-    </div>
-
-    <h3>ديكورات جبسية وحديثة</h3>
-    <div class="gallery">
-      <img src="images/decor/decor-1.jpg" alt="ديكور 1">
-      <img src="images/decor/decor
-
-
+  <section id="services" style="padding: 40px 20px; background-color: #f9f5ef;">
+    <h2 style="text-align: center; color: #5c4434;">🛠️ خدماتنا</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+      <div style="background: #fff; padding: 20px; border-radius: 8px;">
+        <h3>🏗️ أعمال البناء والتأسيس</h3>
+        <ul>
+          <li>بناء بلوك</li>
+          <li>تمديدات صحية وصرف صحي</li>
+          <li>تمديدات كهربائية</li>
+          <li>طينة ولياسة وديكورات</li>
+        </ul>
+      </div>
+      <div style="background: #fff; padding: 20px; border-radius: 8px;">
+        <h3>🧱 أعمال الإكساء والتشطيب</h3>
+        <ul>
+          <li>تلبيس جميع أنواع السيراميك والكرانيت</li>
+          <li>تركيب جميع أنواع البلاط</li>
+          <li>تفصيل وتركيب كافة أعمال الرخام والغرانيت</li>
+          <li>تفصيل وتركيب كافة أنواع الحجر للواجهات والجدران</li>
+        </ul>
+      </div>
