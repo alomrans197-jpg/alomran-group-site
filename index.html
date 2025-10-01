@@ -1,42 +1,59 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
 <head>
+  <!-- إعدادات أساسية -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>مكتب العمران كروب</title>
 
+  <!-- 🔍 تحسين محركات البحث -->
+  <meta name="description" content="مكتب العمران كروب - خدمات الترميم، الإكساء، الديكور، والتشطيب النهائي في سوريا. خبرة أكثر من 15 عامًا في تنفيذ المشاريع السكنية والتجارية بجودة عالية.">
+  <meta name="keywords" content="ترميم, إكساء, ديكور, تشطيب, حجر, سيراميك, رخام, أبواب, سوريا, دمشق, العمران كروب, تصميم داخلي, أعمال بناء, تشطيب فاخر">
+  <meta name="author" content="مكتب العمران كروب">
+  <meta name="robots" content="index, follow">
+
+  <!-- 🌐 روابط الخطوط -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- 🏷️ عنوان الصفحة -->
+  <title>مكتب العمران كروب | تعهدات عمرانية وديكور في سوريا</title>
+
+  <!-- 🎨 تنسيقات CSS مدمجة -->
   <style>
     body {
       margin: 0;
       font-family: 'Cairo', sans-serif;
-      background-color: #f9f5ef;
-      color: #5c2a2a;
+      background-color: #f4f1ec;
+      color: #3a2f2f;
     }
-
-    h1, h2 {
+    header {
+      background-color: #1c1c1c;
+      color: #d4af37;
+      padding: 40px 20px;
       text-align: center;
     }
-
-    header {
-      background-color: #000;
-      color: #d4af37;
-      padding:40px 20px;
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      text-shadow: 0 0 10px #d4af37;
     }
-grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    header p {
+      color: #f4f1ec;
+      font-size: 1.2em;
+    }
     .grid {
       display: grid;
-    
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 20px;
-      padding: 20px;
-      text-align: center;
+      padding: 30px;
     }
-
     .grid img {
       width: 100%;
-      border-radius: 8px;
-      cursor: zoom-in;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
     }
-
+    .grid img:hover {
+      transform: scale(1.05);
+    }
     .lightbox {
       display: none;
       position: fixed;
@@ -47,31 +64,45 @@ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       justify-content: center;
       align-items: center;
     }
-
     .lightbox img {
       max-width: 90%;
       max-height: 90%;
       border-radius: 10px;
       box-shadow: 0 0 20px #d4af37;
     }
-
+    .marquee {
+      background-color: #000;
+      color: #d4af37;
+      font-weight: bold;
+      padding: 12px;
+      border-top: 2px solid #d4af37;
+      border-bottom: 2px solid #d4af37;
+      text-align: center;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #5c2a2a;
+      margin-bottom: 20px;
+    }
     form {
       background: #fff;
       padding: 30px;
       border-radius: 10px;
-      max-width: 600px;
-      margin: auto;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
     input, select, textarea {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin-bottom: 20px;
       border-radius: 6px;
       border: 1px solid #ccc;
+      font-size: 1em;
     }
-
     button {
       background-color: #d4af37;
       color: white;
@@ -81,144 +112,14 @@ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       font-size: 1.1em;
       cursor: pointer;
     }
-
-    .marquee {
-      background-color: #000;
-      color: #d4af37;
-      font-weight: bold;
-      padding: 12px;
-      border-top: 2px solid #d4af37;
-      border-bottom: 2px solid #d4af37;
+    button:hover {
+      background-color: #bfa134;
+    }
+    a.whatsapp-button {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      text-decoration: none;
     }
   </style>
 </head>
-<body>
-
-  <!-- شعار -->
-  <header>
-    <h1 style="text-shadow: 0 0 10px #d4af37;">مكتب العمران كروب</h1>
-    <p style="color: #f9f5ef;">نبني الثقة قبل الجدران</p>
-  </header>
-
-  <!-- صور الأقسام -->
-  <section>
-    <h2>📌 خدماتنا في لمحة</h2>
-    <div class="grid">
-  <img src="img1.jpg" alt="ديكور داخلي">
-  <img src="img2.jpg" alt="أعمال حجر">
-  <img src="img3.jpg" alt="أبواب خشب">
-  <img src="img4.jpg" alt="مطابخ">
-  <img src="img5.jpg" alt="دهانات">
-  <img src="img6.jpg" alt="سيراميك">
-  <img src="img7.jpg" alt="تشطيب خارجي">
-  <img src="img8.jpg" alt="تصميم داخلي">
-  <img src="img9.jpg" alt="رخام">
-  <img src="img10.jpg" alt="جبس">
-  <img src="img11.jpg" alt="إضاءة">
-  <img src="img12.jpg" alt="واجهات حجرية">
-</div>
-
-  </section>
-
-  <!-- شريط متحرك -->
-  <div class="marquee">
-    <marquee behavior="scroll" direction="right" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
-      🧱 أعمال الحجر | 🟫 تركيب السيراميك | 🪟 نوافذ وأبواب ألمنيوم | 🚪 أبواب خشبية داخلية وخارجية | 🎨 دهانات وصبغ داخلي وخارجي | 🪨 تفصيل وتركيب رخام فاخر | 🛋️ ديكورات جبسية وداخلية
-    </marquee>
-  </div>
-
-  <!-- نافذة تكبير الصور -->
-  <div id="lightbox" class="lightbox" onclick="this.style.display='none'">
-    <img id="lightbox-img" src="">
-  </div>
-
-  <!-- من نحن -->
-  <section>
-    <h2>👷‍♂️ من نحن</h2>
-    <div style="max-width: 800px; margin: auto; padding: 20px;">
-      <p>
-        مكتب العمران كروب هو فريق من الكوادر السورية المتخصصة في تنفيذ كافة أعمال الترميم، الإكساء، الديكور، والتشطيب النهائي.
-        نعمل بتنظيم ذاتي وبخبرات متراكمة تمتد لأكثر من 15 عامًا، ونقدم حلولًا متكاملة للمنازل، الشركات، والمشاريع الخاصة.
-      </p>
-      <p>
-        <strong>رؤيتنا:</strong> أن نكون الخيار الأول في سوريا بمجال التعهدات العمرانية.  
-        <strong>رسالتنا:</strong> تقديم خدمات احترافية بأسعار عادلة وبأعلى جودة ممكنة.
-      </p>
-    </div>
-<section id="contact" style="padding: 60px 20px; background-color: #000;">
-  <h2 style="text-align: center; color: #d4af37;">📞 اتصل بنا</h2>
-  <div style="max-width: 600px; margin: auto; color: #fff; font-size: 1.1em; line-height: 1.8; text-align: center;">
-    <p>📍 <strong>العنوان:</strong> سوريا – دمشق</p>
-    
-    <p>👷‍♂️ <strong>بإشراف:</strong></p>
-
-     <p>📞 <a href="tel:+963995607888">+963-995-607-888</a></p>
-  <p>📞 <a href="tel:+963980007563">+963-980-007-563</a></p>
-  <p>📧 البريد الإلكتروني: <a href="mailto:alomran.group@gmail.com">alomran.group@gmail.com</a></p>
-  <p>بإشراف محمد الإبراهيم وعبدالله الإبراهيم</p>
-</section>
-  
-    
-    <a href="https://wa.me/963995607888?text=أرغب%20بطلب%20خدمة%20من%20مكتب%20العمران" target="_blank">
-      <button style="
-        background-color: #25D366;
-        color: white;
-        padding: 12px 24px;
-        border: none;
-        border-radius: 6px;
-        font-size: 1.1em;
-        cursor: pointer;
-        margin-top: 20px;
-      ">
-        💬 طلب خدمة عبر واتساب
-      </button>
-    </a>
-  </div>
-
-      <label>تفاصيل إضافية:</label>
-      <textarea rows="4"></textarea>
-
-      <button type="submit">إرسال الطلب</button>
-    </form>
-  </section>
-
-  <!-- سكربت تكبير الصور -->
-  <script>
-    document.querySelectorAll('.grid img').forEach(img => {
-      img.addEventListener('click', () => {
-        document.getElementById('lightbox-img').src = img.src;
-        document.getElementById('lightbox').style.display = 'flex';
-      });
-    });
-  </script>
-<section id="order" style="padding: 60px 20px; background-color: #f9f5ef;">
-  <h2 style="text-align: center; color: #5c2a2a;">📝 طلب خدمة</h2>
-  <form style="max-width: 600px; margin: auto; background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-
-    <label for="name">الاسم الكامل:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="phone">رقم الهاتف:</label>
-    <input type="tel" id="phone" name="phone" required>
-
-    <label for="services">الخدمات المطلوبة:</label>
-    <select id="services" name="services[]" multiple required style="height: 200px;">
-      <option value="حجر">🧱 أعمال الحجر</option>
-      <option value="سيراميك">🟫 تركيب السيراميك</option>
-      <option value="ألمنيوم">🪟 نوافذ وأبواب ألمنيوم</option>
-      <option value="خشب">🚪 أبواب خشب</option>
-      <option value="دهان">🎨 دهانات وصبغ</option>
-      <option value="رخام">🪨 تفصيل رخام</option>
-      <option value="ديكور">🛋️ ديكورات داخلية</option>
-    </select>
-    <small style="color: #777;">اضغط Ctrl أو Shift لاختيار أكثر من خدمة</small>
-
-    <label for="message">تفاصيل إضافية:</label>
-    <textarea id="message" name="message" rows="4"></textarea>
-
-    <button type="submit">إرسال الطلب</button>
-  </form>
-</section>
-
-</body>
-</html>
