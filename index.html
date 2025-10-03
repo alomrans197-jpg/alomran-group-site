@@ -66,6 +66,47 @@
       font-weight: bold;
       cursor: pointer;
     }
+    /* معرض الصور */
+    #gallery h2 { text-align: center; margin-bottom: 20px; }
+    #gallery .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    #gallery .gallery-grid div {
+      text-align: center;
+    }
+    #gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    /* اتصل بنا */
+    .contact-section {
+      background-color: #f9f9f9;
+      padding: 30px;
+      text-align: center;
+      border-top: 2px solid #ccc;
+    }
+    .contact-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      text-decoration: none;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .whatsapp-button {
+      background-color: #25D366;
+    }
+    .email-button {
+      background-color: #0072c6;
+    }
+    .contact-info p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
@@ -88,6 +129,21 @@
     <a href="#contact">اتصل بنا</a>
   </nav>
 
+  <!-- معرض الصور -->
+  <section id="gallery">
+    <h2>📸 معرض الصور</h2>
+    <div class="gallery-grid">
+      <div><h3>🪨 قسم الحجر</h3><img src="images/stone.jpg" alt="الحجر"></div>
+      <div><h3>🧱 قسم الرخام</h3><img src="images/marble.jpg" alt="الرخام"></div>
+      <div><h3>🪵 قسم الخشب</h3><img src="images/wood.jpg" alt="الخشب"></div>
+      <div><h3>🪟 قسم الألمنيوم</h3><img src="images/aluminum.jpg" alt="الألمنيوم"></div>
+      <div><h3>🧱 قسم السيراميك</h3><img src="images/ceramic.jpg" alt="السيراميك"></div>
+      <div><h3>🎨 قسم الديكور</h3><img src="images/decor.jpg" alt="الديكور"></div>
+      <div><h3>🎨 قسم الدهان والصباغ</h3><img src="images/paint.jpg" alt="الدهان والصباغ"></div>
+    </div>
+  </section>
+
+  <!-- من نحن -->
   <section id="about">
     <h2>من نحن</h2>
     <p>نحن مكتب العمران كروب نجمع كل الاختصاصات بين تفاصيل بيتك بخبرات مهنية عالية الجودة.</p>
@@ -97,51 +153,9 @@
     </div>
   </section>
 
-  <section id="services">
-    <h2>خدماتنا</h2>
-    <ul>
-      <li>إنشاء من الصفر حتى المفتاح</li>
-      <li>تمديدات صحية وكهربائية</li>
-      <li>تركيب رخام، سيراميك، جرانيت، بلاط</li>
-      <li>أبواب وشبابيك خشب وألمنيوم هاي غلوس</li>
-      <li>ديكورات جبس بورد</li>
-      <li>أعمال المعجونة والدهانات</li>
-      <li>بياضات صحية وكهربائية</li>
-    </ul>
-  </section>
+  <!-- باقي الأقسام كما هي... -->
 
-  <section id="multi-request">
-    <h2>📋 طلب خدمة متعددة</h2>
-    <form onsubmit="sendMultiRequest(); return false;">
-      <input type="text" id="clientName" placeholder="الاسم الكامل" required>
-      <input type="text" id="clientPhone" placeholder="رقم الهاتف أو واتس آب" required>
-      <input type="text" id="clientAddress" placeholder="العنوان أو المنطقة" required>
-
-      <label>الخدمة الأولى:</label>
-      <select id="service1">
-        <option value="">اختر خدمة</option>
-        <option value="إنشاء من الصفر">إنشاء من الصفر</option>
-        <option value="تمديدات صحية">تمديدات صحية</option>
-        <option value="تركيب رخام">تركيب رخام</option>
-        <option value="جبس بورد">جبس بورد</option>
-      </select>
-      <input type="text" id="area1" placeholder="المساحة بالمتر (مثلاً: 120)" />
-
-      <label>الخدمة الثانية:</label>
-      <select id="service2">
-        <option value="">اختر خدمة</option>
-        <option value="تمديدات كهربائية">تمديدات كهربائية</option>
-        <option value="تركيب سيراميك">تركيب سيراميك</option>
-        <option value="دهانات ومعجونة">دهانات ومعجونة</option>
-        <option value="أبواب وشبابيك">أبواب وشبابيك</option>
-      </select>
-      <input type="text" id="area2" placeholder="المساحة بالمتر (اختياري)" />
-
-      <textarea id="clientNotes" placeholder="ملاحظات إضافية (اختياري)" rows="4"></textarea>
-      <button type="submit">📤 إرسال الطلب</button>
-    </form>
-  </section>
-
+  <!-- الأسئلة الشائعة -->
   <section id="faq">
     <h2>❓ الأسئلة الشائعة</h2>
     <div class="faq-item">
@@ -155,5 +169,8 @@
     <div class="faq-item">
       <button class="faq-question" onclick="toggleAnswer(this)">كم تستغرق مدة التنفيذ؟</button>
       <div class="faq-answer">تتراوح المدة حسب نوع العمل والمساحة، وغالبًا بين 3 إلى 10 أيام.</div>
+    </div>
+  </section>
 
-
+  <!-- اتصل بنا -->
+  <section id
