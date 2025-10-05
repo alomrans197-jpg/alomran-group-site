@@ -1,137 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>مكتب العمران كروب للتعهدات</title>
-  <style>
-    body { font-family: 'Arial', sans-serif; margin: 0; background-color: #f9f9f9; color: #333; }
-    header { background-color: #2c3e50; color: white; text-align: center; padding: 20px; }
-    nav { background-color: #eee; text-align: center; padding: 10px; }
-    nav a { margin: 0 10px; text-decoration: none; color: #2c3e50; font-weight: bold; }
-    section { padding: 20px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    h2 { color: #2c3e50; margin-bottom: 10px; }
-    ul { list-style: none; padding: 0; }
-    ul li::before { content: "✅ "; color: green; }
-    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-    .gallery-grid div { text-align: center; }
-    .gallery-grid img { width: 100%; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    form input, form textarea, form select, form button {
-      width: 100%; margin: 8px 0; padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-family: inherit;
-    }
-    form button {
-      background-color: #2c3e50; color: white; font-weight: bold; cursor: pointer;
-    }
-    .contact-buttons a {
-      display: inline-block; margin: 10px; padding: 12px 20px; text-decoration: none;
-      color: white; border-radius: 5px; font-weight: bold;
-    }
-    .whatsapp-button { background-color: #25D366; }
-    .email-button { background-color: #0072c6; }
-    .faq-item { margin-bottom: 15px; }
-    .faq-question {
-      width: 100%; background-color: #eee; border: none; padding: 12px; font-weight: bold;
-      text-align: right; cursor: pointer; border-radius: 5px;
-    }
-    .faq-answer {
-      display: none; padding: 10px; background-color: #fff;
-      border-right: 3px solid #25D366; margin-top: 5px; border-radius: 5px;
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>مكتب العمران كروب للتعهدات</h1>
-</header>
-
-<nav>
-  <a href="#gallery">معرض الصور</a>
-  <a href="#about">من نحن</a>
-  <a href="#services">خدماتنا</a>
-  <a href="#request">طلب تعهد أو إكساء</a>
-  <a href="#contact">اتصل بنا</a>
-  <a href="#faq">الأسئلة الشائعة</a>
-</nav>
-
-<section id="gallery">
-  <h2>📸 معرض الصور</h2>
-  <div class="gallery-grid">
-    <div><h3>🪨 الحجر</h3><img src="images/stone.jpg" alt="الحجر"></div>
-    <div><h3>🧱 الرخام</h3><img src="images/marble.jpg" alt="الرخام"></div>
-    <div><h3>🪵 الخشب</h3><img src="images/wood.jpg" alt="الخشب"></div>
-    <div><h3>🪟 الألمنيوم</h3><img src="images/aluminum.jpg" alt="الألمنيوم"></div>
-    <div><h3>🧱 السيراميك</h3><img src="images/ceramic.jpg" alt="السيراميك"></div>
-    <div><h3>🎨 الديكور</h3><img src="images/decor.jpg" alt="الديكور"></div>
-    <div><h3>🎨 الدهان والصباغ</h3><img src="images/paint.jpg" alt="الدهان والصباغ"></div>
-  </div>
-</section>
-
-<section id="about">
-  <h2>🏢 من نحن</h2>
-  <p>
-    مكتب العمران كروب للتعهدات هو فريق هندسي متخصص في تنفيذ أعمال البناء والإكساء من الصفر حتى المفتاح، بخبرة تمتد لأكثر من 15 عامًا في السوق السورية. نتميز بالدقة، الالتزام، والجودة العالية في جميع مراحل العمل، من التصميم إلى التسليم.
-  </p>
-  <p>
-    نعمل بإشراف مباشر من المهندس <strong>محمد الإبراهيم</strong> والمهندس <strong>عبدالله الإبراهيم</strong>، ونغطي كافة مناطق دمشق وريفها.
-  </p>
-  <p>
-    رؤيتنا هي تقديم حلول متكاملة تلبي احتياجات العملاء بأعلى معايير الجودة، وبأسعار مدروسة تناسب السوق المحلي.
-  </p>
-  <div class="contact-info">
-    <p>📍 الموقع: سوريا – دمشق</p>
-    <p>📞 الهاتف: 00963995607888</p>
-    <p>📧 البريد الإلكتروني: alomran.s197@gmail.com</p>
-  </div>
-</section>
-
-<section id="services">
-  <h2>🛠️ خدماتنا</h2>
-  <ul>
-    <li>إنشاء من الصفر حتى المفتاح</li>
-    <li>تمديدات صحية وكهربائية</li>
-    <li>تركيب رخام، سيراميك، جرانيت، بلاط</li>
-    <li>أبواب وشبابيك خشب وألمنيوم هاي غلوس</li>
-    <li>ديكورات جبس بورد</li>
-    <li>أعمال المعجونة والدهانات</li>
-    <li>بياضات صحية وكهربائية</li>
-  </ul>
-</section>
-
-<section id="request">
-  <h2>🧾 خدمة العملاء – طلب تعهد أو تنفيذ أعمال</h2>
-  <form>
-    <input type="text" placeholder="الاسم الكامل" required>
-    <input type="text" placeholder="رقم الهاتف أو واتساب" required>
-    <input type="text" placeholder="المنطقة أو العنوان" required>
-    <select required>
-      <option value="">اختر نوع الخدمة المطلوبة</option>
-      <option>إنشاء من الصفر حتى المفتاح</option>
-      <option>تمديدات صحية</option>
-      <option>تمديدات كهربائية</option>
-      <option>تركيب رخام أو سيراميك</option>
-      <option>أعمال دهان ومعجونة</option>
-      <option>ديكورات جبس بورد</option>
-      <option>أبواب وشبابيك خشب أو ألمنيوم</option>
-    </select>
-    <input type="text" placeholder="المساحة المطلوبة (مثلاً: 120 متر)" />
-    <textarea placeholder="ملاحظات إضافية (اختياري)" rows="4"></textarea>
-    <button type="submit">📤 إرسال الطلب</button>
-  </form>
-</section>
-
-<section id="contact">
-  <h2>📞 اتصل بنا</h2>
-  <p>نحن جاهزون للرد على استفساراتكم وتقديم الدعم الكامل في أي وقت.</p>
-  <div class="contact-buttons">
-    <a href="https://wa.me/963995607888" target="_blank" class="whatsapp-button">💬 تواصل عبر واتساب</a>
-    <a href="mailto:alomran.s197@gmail.com" class="email-button">📧 أرسل بريد إلكتروني</a>
-  </div>
-  <div class="contact-info">
-    <p>📱 رقم الهاتف: 00963995607888</p>
-    <p>📍 الموقع: سوريا – دمشق</p>
-  </div>
-</section>
-
-<section id="faq">
-  <h2>❓ الأسئلة الشائعة</h2
