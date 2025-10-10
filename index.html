@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>مكتب العمران للترميم والإكساء</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+    }
+    .contact {
+      background-color: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .services {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      margin-bottom: 10px;
+      padding-right: 15px;
+      position: relative;
+    }
+    .services li::before {
+      content: "✔️";
+      position: absolute;
+      right: 0;
+    }
+    .decor-img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .marquee {
+      background-color: #dfe6e9;
+      padding: 10px;
+      font-weight: bold;
+      color: #2c3e50;
+      border-top: 2px solid #b2bec3;
+      border-bottom: 2px solid #b2bec3;
+    }
+    .contact-form {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 20px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form input[type="submit"] {
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+    }
+    .contact-form input[type="submit"]:hover {
+      background-color: #34495e;
+    }
+  </style>
+</head>
+<body>
 
+  <header>
+    <h1>مكتب العمران للترميم والإكساء والديكور</h1>
+    <p>تعهدات عامة – جودة واحترافية في دمشق وريفها</p>
+  </header>
+
+  <div class="marquee">
+    <marquee behavior="scroll" direction="right" scrollamount="5">
+      أعمالنا: البناء – التمديدات الصحية – التمديدات الكهربائية – تركيب السيراميك – تركيب الرخام – تلبيس الحجر – تركيب الأبواب – تفصيل المطابخ – تنفيذ التصاميم – الديكور – الدهان – بخ الموبيليا
+    </marquee>
+  </div>
+
+  <section>
+    <h2>من نحن</h2>
+    <p>مكتب العمران متخصص في أعمال الترميم والإكساء الداخلي والخارجي، ويقدم خدماته باحترافية عالية لتلبية احتياجات العملاء في دمشق وريفها.</p>
+  </section>
+
+  <section class="contact">
+    <h2>معلومات التواصل</h2>
+    <p>👤 المسؤولون: إسراف محمد وعبدالله الإبراهيم</p>
+    <p>📞 الهاتف: 00963995607888</p>
+    <p>📧 البريد الإلكتروني: ALOMRAN.S197@gmail.com</p>
+    <p>📍 العنوان: سوريا – دمشق</p>
+  </section>
+
+  <section class="services">
+    <h2>أعمالنا</h2>
+    <ul>
+      <li>أعمال البناء</li>
+      <li>التمديدات الصحية</li>
+      <li>التمديدات الكهربائية</li>
+      <li>تركيب كافة أنواع السيراميك للجدران والأرضيات</li>
+      <li>تركيب كافة أعمال الرخام</li>
+      <li>تلبيس حجر داخلي وخارجي</li>
+      <li>تركيب كافة أنواع الأبواب الخشبية والألمنيوم</li>
+      <li>تفصيل كافة أعمال المطابخ هاي غلوس أمريكي</li>
+      <li>تنفيذ كافة التصاميم</li>
+      <li>تنفيذ أعمال الديكور والدهان والصبغ</li>
+      <li>بخ الموبيليا</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>نماذج من أعمالنا</h2>
+    <img src="images/decor.jpg" alt="ديكور عصري" class="decor-img">
+  </section>
+
+  <section class="contact-form">
+    <h2>اتصل بنا</h2>
+    <form action="mailto:ALOMRAN.S197@gmail.com" method="post" enctype="text/plain">
+      <label for="name">الاسم:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">البريد الإلكتروني:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">رسالتك:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <input type="submit" value="إرسال">
+    </form>
+  </section>
+
+</body>
+</html>
