@@ -2,186 +2,125 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>موقع مجموعة العمران</title>
-
-  <style>
-    /* تنسيق معرض الأبواب الخشبية */
-    .wood-door-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .wood-door-gallery img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .wood-door-gallery img:hover {
-      transform: scale(1.05);
-    }
-
-    /* تنسيق عام للأقسام */
-    section {
-      padding: 20px;
-    }
-
-    /* تنسيق قسم اتصل بنا */
-    .contact {
-      background-color: #ecf0f1;
-      padding: 15px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-
-    /* تنسيق قسم الخدمات */
-    .services {
-      /* أكمل التنسيق هنا حسب الحاجة */
-    }
-
-    /* تنسيق معرض الصور العام */
- .gallery-section {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.gallery-section h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
-  color: #333;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.gallery-item {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.gallery-item:hover {
-  transform: scale(1.03);
-}
-
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border: 4px solid #fff;
-  border-radius: 8px;
-}
-
-.gallery-item p {
-  padding: 10px;
-  font-size: 16px;
-  color: #555;
-}
-
-    }
-  </style>
-</head>
-
-
-
-  <meta charset="UTF-8">
-  <title>مكتب العمران للترميم والإكساء</title>
+  <title>مكتب العمران | ترميم وإكساء وديكور احترافي</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      background: linear-gradient(to bottom, #f4f4f4, #eaeaea);
       margin: 0;
       padding: 0;
+      color: #333;
     }
+
     header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 20px;
+      background: linear-gradient(to right, #2c3e50, #34495e);
+      color: #fff;
+      padding: 30px 20px;
       text-align: center;
-    )
-     <style>
-  .wood-door-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
 
-  .wood-door-gallery img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
 
-  .wood-door-gallery img:hover {
-    transform: scale(1.05);
-  }
-</style>
- 
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .marquee {
+      background-color: #dfe6e9;
+      padding: 12px;
+      font-weight: bold;
+      color: #2c3e50;
+      border-top: 2px solid #b2bec3;
+      border-bottom: 2px solid #b2bec3;
+      text-align: center;
+    }
+
     section {
-      padding: 20px;
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: auto;
     }
-    .contact {
-      background-color: #ecf0f1;
-      padding: 15px;
-      border-radius: 8px;
+
+    h2 {
+      font-size: 26px;
       margin-bottom: 20px;
+      color: #2c3e50;
+      border-bottom: 2px solid #ccc;
+      display: inline-block;
+      padding-bottom: 5px;
     }
-    .services {
-      background-color: #ffffff;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    .contact, .services, .contact-form {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
     }
+
     .services ul {
       list-style: none;
       padding: 0;
     }
+
     .services li {
       margin-bottom: 10px;
-      padding-right: 15px;
+      padding-right: 20px;
       position: relative;
     }
+
     .services li::before {
       content: "✔️";
       position: absolute;
       right: 0;
     }
-    .decor-img {
-      width: 100%;
-      max-width: 600px;
+
+    .gallery-section {
+      background-color: #f9f9f9;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .gallery-item {
+      background-color: #fff;
       border-radius: 10px;
-      margin-top: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
     }
-    .marquee {
-      background-color: #dfe6e9;
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid #eee;
+    }
+
+    .gallery-item p {
       padding: 10px;
-      font-weight: bold;
-      color: #2c3e50;
-      border-top: 2px solid #b2bec3;
-      border-bottom: 2px solid #b2bec3;
+      font-size: 16px;
+      color: #555;
+      margin: 0;
+      background-color: #f0f0f0;
     }
-    .contact-form {
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin: 20px;
-    }
+
     .contact-form input,
     .contact-form textarea {
       width: 100%;
@@ -191,13 +130,16 @@
       border: 1px solid #ccc;
       border-radius: 5px;
     }
+
     .contact-form input[type="submit"] {
       background-color: #2c3e50;
       color: white;
       border: none;
       cursor: pointer;
       padding: 10px 20px;
+      border-radius: 5px;
     }
+
     .contact-form input[type="submit"]:hover {
       background-color: #34495e;
     }
@@ -211,14 +153,12 @@
   </header>
 
   <div class="marquee">
-    <marquee behavior="scroll" direction="right" scrollamount="5">
-      أعمالنا: البناء – التمديدات الصحية – التمديدات الكهربائية – تركيب السيراميك – تركيب الرخام – تلبيس الحجر – تركيب الأبواب – تفصيل المطابخ – تنفيذ التصاميم – الديكور – الدهان – بخ الموبيليا
-    </marquee>
+    أعمالنا: البناء – التمديدات الصحية – التمديدات الكهربائية – تركيب السيراميك – تركيب الرخام – تلبيس الحجر – تركيب الأبواب – تفصيل المطابخ – تنفيذ التصاميم – الديكور – الدهان – بخ الموبيليا
   </div>
 
   <section>
     <h2>من نحن</h2>
-    <p>مكتب العمران متخصص في أعمال الترميم والإكساء الداخلي والخارجي، ويقدم خدماته باحترافية عالية لتلبية احتياجات العملاء في دمشق وريفها.</p>
+    <p>نحن مكتب العمران، نمتلك خبرة واسعة في تنفيذ مشاريع الترميم والإكساء الداخلي والخارجي، ونقدم خدماتنا باحترافية عالية تلبي تطلعات عملائنا في دمشق وريفها.</p>
   </section>
 
   <section class="contact">
@@ -235,116 +175,40 @@
       <li>أعمال البناء</li>
       <li>التمديدات الصحية</li>
       <li>التمديدات الكهربائية</li>
-      <li>تركيب كافة أنواع السيراميك للجدران والأرضيات</li>
-      <li>تركيب كافة أعمال الرخام</li>
-      <li>تلبيس حجر داخلي وخارجي</li>
-      <li>تركيب كافة أنواع الأبواب الخشبية والألمنيوم</li>
-      <li>تفصيل كافة أعمال المطابخ هاي غلوس أمريكي</li>
-      <li>تنفيذ كافة التصاميم</li>
-      <li>تنفيذ أعمال الديكور والدهان والصبغ</li>
+      <li>تركيب السيراميك للجدران والأرضيات</li>
+      <li>تركيب الرخام</li>
+      <li>تلبيس الحجر الداخلي والخارجي</li>
+      <li>تركيب الأبواب الخشبية والألمنيوم</li>
+      <li>تفصيل المطابخ هاي غلوس أمريكي</li>
+      <li>تنفيذ التصاميم والديكور</li>
+      <li>أعمال الدهان والصبغ</li>
       <li>بخ الموبيليا</li>
     </ul>
+  </section>
 
-<section class="gallery-section">
-  <h2>نماذج من أعمالنا</h2>
-  <div class="gallery-grid">
-
-    <!-- ديكور داخلي -->
-    <div class="gallery-item">
-      <img src="images/interior-final.jpg" alt="ديكور داخلي" loading="lazy">
-      <p>ديكور داخلي</p>
+  <section class="gallery-section">
+    <h2>نماذج من أعمالنا</h2>
+    <div class="gallery-grid">
+      <!-- أضف هنا صورك داخل عناصر gallery-item -->
+      <div class="gallery-item">
+        <img src="images/interior-final.jpg" alt="ديكور داخلي" loading="lazy">
+        <p>ديكور داخلي</p>
+      </div>
+      <!-- تابع باقي الصور بنفس التنسيق -->
     </div>
-    <div class="gallery-item">
-      <img src="images/interior-01.jpg" alt="ديكور داخلي 1" loading="lazy">
-      <p>ديكور داخلي 1</p>
-    </div>
-
-    <!-- غرف ومطابخ -->
-    <div class="gallery-item">
-      <img src="images/bedroom-01.jpg" alt="غرفة نوم 1" loading="lazy">
-      <p>غرفة نوم 1</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/kitchen-01.jpg" alt="مطبخ 1" loading="lazy">
-      <p>مطبخ 1</p>
-    </div>
-
-    <!-- الحجر -->
-    <div class="gallery-item">
-      <img src="images/stone-white-elevation.jpg" alt="واجهة حجر أبيض" loading="lazy">
-      <p>واجهة حجر أبيض</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/stone-mix-texture-min.jpg" alt="خليط نسيج الحجر" loading="lazy">
-      <p>خليط نسيج الحجر</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/stone-entrance-arch1.jpg" alt="قوس مدخل حجري" loading="lazy">
-      <p>قوس مدخل حجري</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/stone-column-decor-min1.jpg" alt="ديكور عمود حجري" loading="lazy">
-      <p>ديكور عمود حجري</p>
-    </div>
-
-    <!-- أبواب خشبية -->
-    <div class="gallery-item">
-      <img src="images/wood-door-classic1.jpg" alt="باب خشبي كلاسيكي" loading="lazy">
-      <p>باب خشبي كلاسيكي</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/wood-door-modern2.jpg" alt="باب خشبي عصري" loading="lazy">
-      <p>باب خشبي عصري</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/wood-door-arched3.jpg" alt="باب خشبي مقوس" loading="lazy">
-      <p>باب خشبي مقوس</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/wood-door-double4.jpg" alt="باب خشبي مزدوج" loading="lazy">
-      <p>باب خشبي مزدوج</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/wood-door-carved5.jpg" alt="باب خشبي محفور" loading="lazy">
-      <p>باب خشبي محفور</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/wood-door-sliding6.jpg" alt="باب خشبي منزلق" loading="lazy">
-      <p>باب خشبي منزلق</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/wood-door-vintage7.jpg" alt="باب خشبي عتيق" loading="lazy">
-      <p>باب خشبي عتيق</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/wood-door-minimal8.jpg" alt="باب خشبي بسيط" loading="lazy">
-      <p>باب خشبي بسيط</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/wood-door-panel9.jpg" alt="باب خشبي بألواح" loading="lazy">
-      <p>باب خشبي بألواح</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/wood-door-rustic10.jpg" alt="باب خشبي ريفي" loading="lazy">
-      <p>باب خشبي ريفي</p>
-    </div>
-
-  </div>
-</section>
-
-
+  </section>
 
   <section class="contact-form">
     <h2>اتصل بنا</h2>
     <form action="mailto:ALOMRAN.S197@gmail.com" method="post" enctype="text/plain">
-      <label for="name">الاسم:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+      <label for="name">الاسم:</label>
+      <input type="text" id="name" name="name" required>
 
-      <label for="email">البريد الإلكتروني:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+      <label for="email">البريد الإلكتروني:</label>
+      <input type="email" id="email" name="email" required>
 
-      <label for="message">رسالتك:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      <label for="message">رسالتك:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
       <input type="submit" value="إرسال">
     </form>
@@ -352,3 +216,4 @@
 
 </body>
 </html>
+
