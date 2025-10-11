@@ -6,39 +6,57 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #f4f4f4, #eaeaea);
       margin: 0;
       padding: 0;
+      background-color: #fdf6e3;
       color: #333;
     }
 
-    header {
-      background: linear-gradient(to right, #2c3e50, #34495e);
-      color: white;
-      padding: 30px 20px;
+    /* واجهة الموقع */
+    .hero {
+      background: url('images/interior-final.jpg') center/cover no-repeat;
+      height: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      color: white;
+      position: relative;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 32px;
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(to bottom right, rgba(128,0,0,0.6), rgba(255,215,0,0.6));
+      z-index: 1;
     }
 
-    header p {
-      margin-top: 10px;
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
       font-size: 18px;
-      opacity: 0.9;
+      margin: 5px 0;
     }
 
     .marquee {
-      background-color: #dfe6e9;
-      padding: 12px;
+      background-color: #b03a2e;
+      color: #fff8dc;
+      padding: 10px;
       font-weight: bold;
-      color: #2c3e50;
-      border-top: 2px solid #b2bec3;
-      border-bottom: 2px solid #b2bec3;
-      text-align: center;
+      font-size: 16px;
+      border-top: 2px solid #d4af37;
+      border-bottom: 2px solid #d4af37;
     }
 
     section {
@@ -50,8 +68,8 @@
     h2 {
       font-size: 26px;
       margin-bottom: 20px;
-      color: #2c3e50;
-      border-bottom: 2px solid #ccc;
+      color: #b03a2e;
+      border-bottom: 2px solid #d4af37;
       display: inline-block;
       padding-bottom: 5px;
     }
@@ -82,7 +100,7 @@
     }
 
     .gallery-section {
-      background-color: #f9f9f9;
+      background-color: #fff8dc;
       padding: 40px 20px;
       text-align: center;
     }
@@ -132,7 +150,7 @@
     }
 
     .contact-form input[type="submit"] {
-      background-color: #2c3e50;
+      background-color: #b03a2e;
       color: white;
       border: none;
       cursor: pointer;
@@ -141,7 +159,7 @@
     }
 
     .contact-form input[type="submit"]:hover {
-      background-color: #34495e;
+      background-color: #922b21;
     }
 
     .whatsapp-button {
@@ -165,19 +183,21 @@
 </head>
 <body>
 
-  <header>
-    <h1>مكتب العمران كروب للترميم والتعهدات العامة</h1>
-    <p>إشراف: محمد وعبدالله الإبراهيم – دقة في العمل، التزام في المواعيد، استنفار تام لجميع الورشات</p>
-  </header>
-
-  <div class="marquee">
-    أعمالنا: البناء – التمديدات الصحية – التمديدات الكهربائية – تركيب السيراميك – تركيب الرخام – تلبيس الحجر – تركيب الأبواب – تفصيل المطابخ – تنفيذ التصاميم – الديكور – الدهان – بخ الموبيليا
+  <div class="hero">
+    <div class="hero-content">
+      <h1>مكتب العمران كروب</h1>
+      <p>للترميم والتعهدات العامة والإكساء والديكور</p>
+      <p>إشراف: محمد وعبدالله الإبراهيم</p>
+      <p>دقة في العمل • التزام في المواعيد • استنفار تام لجميع الورشات</p>
+      <a class="whatsapp-button" href="https://wa.me/963995607888" target="_blank">💬 تواصل معنا عبر واتساب</a>
+    </div>
   </div>
 
-  <section>
-    <h2>من نحن</h2>
-    <p>مكتب العمران متخصص في أعمال الترميم والإكساء الداخلي والخارجي، ويقدم خدماته باحترافية عالية لتلبية احتياجات العملاء في دمشق وريفها.</p>
-  </section>
+  <div class="marquee">
+    <marquee behavior="scroll" direction="right" scrollamount="5">
+      أعمالنا: البناء – التمديدات الصحية – التمديدات الكهربائية – تركيب السيراميك – تركيب الرخام – تلبيس الحجر – تركيب الأبواب – تفصيل المطابخ – تنفيذ التصاميم – الديكور – الدهان – بخ الموبيليا
+    </marquee>
+  </div>
 
   <section class="contact">
     <h2>معلومات التواصل</h2>
@@ -185,7 +205,6 @@
     <p>📞 الهاتف: 00963995607888</p>
     <p>📧 البريد الإلكتروني: ALOMRAN.S197@gmail.com</p>
     <p>📍 العنوان: سوريا – دمشق</p>
-    <a class="whatsapp-button" href="https://wa.me/963995607888" target="_blank">💬 تواصل معنا عبر واتساب</a>
   </section>
 
   <section class="services">
@@ -208,30 +227,32 @@
   <section class="gallery-section">
     <h2>بعض من أعمالنا</h2>
     <div class="gallery-grid">
-      <!-- أضف صورك هنا بنفس التنسيق -->
       <div class="gallery-item">
-        <img src="images/interior-final.jpg" alt="ديكور داخلي" loading="lazy">
+        <img src="images/interior-final.jpg" alt="ديكور داخلي">
         <p>ديكور داخلي</p>
       </div>
-      <!-- تابع باقي الصور بنفس التنسيق -->
+      <div class="gallery-item">
+        <img src="images/kitchen-01.jpg" alt="مطبخ">
+        <p>مطبخ</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/wood-door-classic1.jpg" alt="باب خشبي كلاسيكي">
+        <p>باب خشبي كلاسيكي</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/stone-white-elevation.jpg" alt="واجهة حجر أبيض">
+        <p>واجهة حجر أبيض</p>
+      </div>
+      <!-- أضف المزيد حسب الحاجة -->
     </div>
   </section>
 
-  <section class="contact-form" id="contact">
+  <section class="contact-form">
     <h2>طلبات الزبائن</h2>
     <form action="https://wa.me/963995607888" method="get" target="_blank">
       <label for="name">الاسم:</label>
-      <input type="text" id="name" name="name" placeholder="اكتب اسمك">
+      <input type="text" id="
 
-      <label for="message">طلبك أو استفسارك:</label>
-      <textarea id="message" name="text" rows="5" placeholder="اكتب تفاصيل طلبك"></textarea>
-
-      <input type="submit" value="إرسال عبر واتساب">
-    </form>
-  </section>
-
-</body>
-</html>
 
 
 
