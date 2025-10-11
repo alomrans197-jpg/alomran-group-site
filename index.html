@@ -2,6 +2,100 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <title>موقع مجموعة العمران</title>
+
+  <style>
+    /* تنسيق معرض الأبواب الخشبية */
+    .wood-door-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .wood-door-gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .wood-door-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* تنسيق عام للأقسام */
+    section {
+      padding: 20px;
+    }
+
+    /* تنسيق قسم اتصل بنا */
+    .contact {
+      background-color: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    /* تنسيق قسم الخدمات */
+    .services {
+      /* أكمل التنسيق هنا حسب الحاجة */
+    }
+
+    /* تنسيق معرض الصور العام */
+ .gallery-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 4px solid #fff;
+  border-radius: 8px;
+}
+
+.gallery-item p {
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+    }
+  </style>
+</head>
+
+
+
+  <meta charset="UTF-8">
   <title>مكتب العمران للترميم والإكساء</title>
   <style>
     body {
@@ -16,7 +110,27 @@
       color: white;
       padding: 20px;
       text-align: center;
-    }
+    )
+     <style>
+  .wood-door-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .wood-door-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .wood-door-gallery img:hover {
+    transform: scale(1.05);
+  }
+</style>
+ 
     section {
       padding: 20px;
     }
@@ -130,20 +244,95 @@
       <li>تنفيذ أعمال الديكور والدهان والصبغ</li>
       <li>بخ الموبيليا</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>نماذج من أعمالنا</h2>
-   <img src="images/interior-final.jpg" alt="ديكور داخلي">
-<img src="images/interior-01.jpg" alt="ديكور داخلي 1">
-<img src="images/bedroom-01.jpg" alt="غرفة نوم 1">
-<img src="images/kitchen-01.jpg" alt="مطبخ 1">
-  <img src="images/stone-white-elevation.jpg" alt="واجهة حجر أبيض" width="100%" loading="lazy">
-  <img src="images/stone-mix-texture-min.jpg" alt="خليط نسيج الحجر" width="100%" loading="lazy">
-<img src="images/stone-entrance-arch1.jpg" alt="قوس مدخل حجري" width="100%" loading="lazy">
-<img src="images/stone-column-decor-min1.jpg" alt="ديكور عمود حجري" width="100%" loading="lazy">
-<img src="images/stone-white-elevation.jpg" alt="واجهة حجر أبيض" width="100%" loading="lazy">
-  </section>
+<section class="gallery-section">
+  <h2>نماذج من أعمالنا</h2>
+  <div class="gallery-grid">
+
+    <!-- ديكور داخلي -->
+    <div class="gallery-item">
+      <img src="images/interior-final.jpg" alt="ديكور داخلي" loading="lazy">
+      <p>ديكور داخلي</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/interior-01.jpg" alt="ديكور داخلي 1" loading="lazy">
+      <p>ديكور داخلي 1</p>
+    </div>
+
+    <!-- غرف ومطابخ -->
+    <div class="gallery-item">
+      <img src="images/bedroom-01.jpg" alt="غرفة نوم 1" loading="lazy">
+      <p>غرفة نوم 1</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/kitchen-01.jpg" alt="مطبخ 1" loading="lazy">
+      <p>مطبخ 1</p>
+    </div>
+
+    <!-- الحجر -->
+    <div class="gallery-item">
+      <img src="images/stone-white-elevation.jpg" alt="واجهة حجر أبيض" loading="lazy">
+      <p>واجهة حجر أبيض</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/stone-mix-texture-min.jpg" alt="خليط نسيج الحجر" loading="lazy">
+      <p>خليط نسيج الحجر</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/stone-entrance-arch1.jpg" alt="قوس مدخل حجري" loading="lazy">
+      <p>قوس مدخل حجري</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/stone-column-decor-min1.jpg" alt="ديكور عمود حجري" loading="lazy">
+      <p>ديكور عمود حجري</p>
+    </div>
+
+    <!-- أبواب خشبية -->
+    <div class="gallery-item">
+      <img src="images/wood-door-classic1.jpg" alt="باب خشبي كلاسيكي" loading="lazy">
+      <p>باب خشبي كلاسيكي</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/wood-door-modern2.jpg" alt="باب خشبي عصري" loading="lazy">
+      <p>باب خشبي عصري</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/wood-door-arched3.jpg" alt="باب خشبي مقوس" loading="lazy">
+      <p>باب خشبي مقوس</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/wood-door-double4.jpg" alt="باب خشبي مزدوج" loading="lazy">
+      <p>باب خشبي مزدوج</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/wood-door-carved5.jpg" alt="باب خشبي محفور" loading="lazy">
+      <p>باب خشبي محفور</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/wood-door-sliding6.jpg" alt="باب خشبي منزلق" loading="lazy">
+      <p>باب خشبي منزلق</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/wood-door-vintage7.jpg" alt="باب خشبي عتيق" loading="lazy">
+      <p>باب خشبي عتيق</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/wood-door-minimal8.jpg" alt="باب خشبي بسيط" loading="lazy">
+      <p>باب خشبي بسيط</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/wood-door-panel9.jpg" alt="باب خشبي بألواح" loading="lazy">
+      <p>باب خشبي بألواح</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/wood-door-rustic10.jpg" alt="باب خشبي ريفي" loading="lazy">
+      <p>باب خشبي ريفي</p>
+    </div>
+
+  </div>
+</section>
+
+
 
   <section class="contact-form">
     <h2>اتصل بنا</h2>
