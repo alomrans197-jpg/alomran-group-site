@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>مكتب العمران | ترميم وإكساء وديكور احترافي</title>
+  <title>مكتب العمران كروب | ترميم وتعهدات عامة</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -14,7 +14,7 @@
 
     header {
       background: linear-gradient(to right, #2c3e50, #34495e);
-      color: #fff;
+      color: white;
       padding: 30px 20px;
       text-align: center;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -143,13 +143,31 @@
     .contact-form input[type="submit"]:hover {
       background-color: #34495e;
     }
+
+    .whatsapp-button {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebc59;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>مكتب العمران للترميم والإكساء والديكور</h1>
-    <p>تعهدات عامة – جودة واحترافية في دمشق وريفها</p>
+    <h1>مكتب العمران كروب للترميم والتعهدات العامة</h1>
+    <p>إشراف: محمد وعبدالله الإبراهيم – دقة في العمل، التزام في المواعيد، استنفار تام لجميع الورشات</p>
   </header>
 
   <div class="marquee">
@@ -158,7 +176,7 @@
 
   <section>
     <h2>من نحن</h2>
-    <p>نحن مكتب العمران، نمتلك خبرة واسعة في تنفيذ مشاريع الترميم والإكساء الداخلي والخارجي، ونقدم خدماتنا باحترافية عالية تلبي تطلعات عملائنا في دمشق وريفها.</p>
+    <p>مكتب العمران متخصص في أعمال الترميم والإكساء الداخلي والخارجي، ويقدم خدماته باحترافية عالية لتلبية احتياجات العملاء في دمشق وريفها.</p>
   </section>
 
   <section class="contact">
@@ -167,6 +185,7 @@
     <p>📞 الهاتف: 00963995607888</p>
     <p>📧 البريد الإلكتروني: ALOMRAN.S197@gmail.com</p>
     <p>📍 العنوان: سوريا – دمشق</p>
+    <a class="whatsapp-button" href="https://wa.me/963995607888" target="_blank">💬 تواصل معنا عبر واتساب</a>
   </section>
 
   <section class="services">
@@ -177,7 +196,7 @@
       <li>التمديدات الكهربائية</li>
       <li>تركيب السيراميك للجدران والأرضيات</li>
       <li>تركيب الرخام</li>
-      <li>تلبيس الحجر الداخلي والخارجي</li>
+      <li>تلبيس حجر داخلي وخارجي</li>
       <li>تركيب الأبواب الخشبية والألمنيوم</li>
       <li>تفصيل المطابخ هاي غلوس أمريكي</li>
       <li>تنفيذ التصاميم والديكور</li>
@@ -187,9 +206,9 @@
   </section>
 
   <section class="gallery-section">
-    <h2>نماذج من أعمالنا</h2>
+    <h2>بعض من أعمالنا</h2>
     <div class="gallery-grid">
-      <!-- أضف هنا صورك داخل عناصر gallery-item -->
+      <!-- أضف صورك هنا بنفس التنسيق -->
       <div class="gallery-item">
         <img src="images/interior-final.jpg" alt="ديكور داخلي" loading="lazy">
         <p>ديكور داخلي</p>
@@ -198,22 +217,21 @@
     </div>
   </section>
 
-  <section class="contact-form">
-    <h2>اتصل بنا</h2>
-    <form action="mailto:ALOMRAN.S197@gmail.com" method="post" enctype="text/plain">
+  <section class="contact-form" id="contact">
+    <h2>طلبات الزبائن</h2>
+    <form action="https://wa.me/963995607888" method="get" target="_blank">
       <label for="name">الاسم:</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name" placeholder="اكتب اسمك">
 
-      <label for="email">البريد الإلكتروني:</label>
-      <input type="email" id="email" name="email" required>
+      <label for="message">طلبك أو استفسارك:</label>
+      <textarea id="message" name="text" rows="5" placeholder="اكتب تفاصيل طلبك"></textarea>
 
-      <label for="message">رسالتك:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <input type="submit" value="إرسال">
+      <input type="submit" value="إرسال عبر واتساب">
     </form>
   </section>
 
 </body>
 </html>
+
+
 
