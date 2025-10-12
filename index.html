@@ -2,117 +2,191 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <title>مكتب الإبراهيم إخوان للعمران | ترميم وإكساء وديكور</title>
+  <meta name="description" content="مكتب الإبراهيم إخوان للعمران يقدم خدمات الترميم، الإكساء، الديكور، الرخام، الألمنيوم، والأبواب الخشبية بإشراف هندسي واحترافية عالية.">
+  <meta name="keywords" content="ترميم, إكساء, ديكور, رخام, ألمنيوم, أبواب خشب, تمديد كهرباء, تمديد صحة, معجونة, دهان, بخ موبيليا">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="مكتب الإبراهيم إخوان للعمران - ترميم، إكساء، ديكور، أبواب، ألمنيوم، رخام، حجر.">
-  <meta name="keywords" content="ديكور، ترميم، إكساء، أبواب، ألمنيوم، رخام، حجر، جبس، بدائل">
-  <meta name="author" content="مكتب الإبراهيم إخوان">
-  <title>مكتب الإبراهيم إخوان للعمران</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #000;
+      color: #ffd700;
+    }
+    h1, h2 {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .hero {
+      background: linear-gradient(to bottom, #4b1c1c, #000);
+      padding: 40px 20px;
+    }
+    .hero-images {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+    .hero-images img {
+      width: 45%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+    .scroll-banner {
+      background-color: #ffd700;
+      color: #4b1c1c;
+      font-weight: bold;
+      padding: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+    .services-grid, .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .service-card, .gallery-grid img {
+      background-color: #000;
+      border: 2px solid #ffd700;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #4b1c1c;
+    }
+    .gallery-grid img {
+      width: 100%;
+    }
+    .about-section, .contact-section, .request-section {
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 3px solid #4b1c1c;
+    }
+    .request-section form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, select, textarea {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ffd700;
+      background-color: #000;
+      color: #fff;
+    }
+    button {
+      background-color: #ffd700;
+      color: #4b1c1c;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .whatsapp-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #25D366;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 60px;
+      height: 60px;
+      z-index: 1000;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- رأس الصفحة -->
-  <header>
+  <!-- واجهة الموقع -->
+  <section class="hero">
     <h1>مكتب الإبراهيم إخوان للعمران</h1>
-    <p>ترميم - تعهدات - إكساء - تنفيذ كافة أعمال الديكور</p>
-  </header>
-
-  <!-- صور الواجهة -->
-  <section class="hero-images">
-    <img src="images/right-project.jpg" alt="عمل يمين">
-    <img src="images/left-project.jpg" alt="عمل يسار">
+    <p>ترميم • تعهدات • إكساء • تنفيذ كافة أعمال الديكور</p>
+    <div class="hero-images">
+      <img src="images/حجر-02.jpg" alt="عمل حجر">
+      <img src="images/marble-02.jpg" alt="عمل رخام">
+    </div>
   </section>
 
   <!-- شريط متحرك -->
-  <div class="marquee">
-    <marquee direction="right">
-      تمديد الكهرباء والصحية | تلبيس سيراميك | ديكور جبس | مطابخ ألمنيوم | أبواب خشب | دهان ومعجونة | عروض خاصة على الإكساء الكامل
-    </marquee>
+  <div class="scroll-banner">
+    تمديد كهرباء • ديكور جبسي • مطابخ ألمنيوم هاي غلوس • أبواب خشبية • رخام طبيعي وصناعي • بدائل حديثة
   </div>
 
   <!-- قسم أعمالنا -->
-  <section class="services">
+  <section id="services">
     <h2>أعمالنا</h2>
-    <ul>
-      <li>تمديد الصحة وتمديد الكهرباء</li>
-      <li>اللياسة والطينة</li>
-      <li>تلبيس كافة أنواع السيراميك (جدران، أرضيات، أسقف)</li>
-      <li>تفصيل وتركيب الأبواب والنوافذ الخشبية</li>
-      <li>مطابخ أمريكي هاي غلوس، أبواب، نوافذ، واجهات ألمنيوم</li>
-      <li>رخام وغرانيت طبيعي وصناعي (مجالي، رفوف، ملابن، واجهات)</li>
-      <li>ديكور جبسي وبلاستيكي</li>
-      <li>بدائل خشب، رخام، سيراميك، شيبورد</li>
-      <li>دهان، معجونة، قشط، بخ موبيليا</li>
-    </ul>
+    <div class="services-grid">
+      <div class="service-card">تمديد الصحة والكهرباء</div>
+      <div class="service-card">الياسة والطينة</div>
+      <div class="service-card">تلبيس السيراميك للجدران والأرضيات</div>
+      <div class="service-card">أبواب ونوافذ خشبية</div>
+      <div class="service-card">مطابخ ألمنيوم هاي غلوس</div>
+      <div class="service-card">رخام وغرانيت طبيعي وصناعي</div>
+      <div class="service-card">ديكور جبسي وبلاستيكي</div>
+      <div class="service-card">بدائل خشب، رخام، سيراميك، شيبورد</div>
+      <div class="service-card">دهان ومعجونة وديكوراتها</div>
+      <div class="service-card">قشط وبخ موبيليا</div>
+    </div>
   </section>
 
-  <!-- معرض الصور -->
-  <section class="gallery">
+  <!-- قسم من نحن -->
+  <section class="about-section">
+    <h2>من نحن</h2>
+    <p>
+      مكتب الإبراهيم إخوان للعمران – لتأمين كافة ما يتطلبه البيت الأنيق.  
+      نعمل بأفضل الخامات من النوع الأول، وورشاتنا المتكاملة تهتم بأدق التفاصيل.  
+      نتميز بالدقة في العمل، الالتزام بالمواعيد، وإشراف مهندسين وفنيين بكفاءات عالية.
+    </p>
+  </section>
+
+  <!-- قسم طلبات العملاء -->
+  <section class="request-section">
+    <h2>طلبات العملاء</h2>
+    <form action="mailto:alomran.s197@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="الاسم الكامل" required>
+      <input type="tel" name="phone" placeholder="رقم الهاتف أو واتساب" required>
+      <label for="services">اختر الخدمات المطلوبة:</label>
+      <select name="services" id="services" multiple>
+        <option>تمديد كهرباء</option>
+        <option>تمديد صحة</option>
+        <option>تلبيس سيراميك</option>
+        <option>أبواب ونوافذ خشبية</option>
+        <option>مطابخ ألمنيوم هاي غلوس</option>
+        <option>رخام وغرانيت</option>
+        <option>ديكور جبسي</option>
+        <option>بدائل حديثة</option>
+        <option>دهان ومعجونة</option>
+        <option>بخ موبيليا</option>
+      </select>
+      <textarea name="notes" placeholder="ملاحظات إضافية أو تفاصيل خاصة"></textarea>
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </section>
+
+  <!-- قسم معرض الصور -->
+  <section class="gallery-section">
     <h2>معرض الصور</h2>
-    <div class="image-grid">
-      <!-- حجر -->
-      <img src="images/حجر-02.jpg" alt="حجر">
+    <div class="gallery-grid">
       <img src="images/حجر-03.jpg" alt="حجر">
-      <!-- رخام -->
-      <img src="images/marble-02.jpg" alt="رخام">
       <img src="images/marble-03.jpg" alt="رخام">
-      <!-- أبواب خشب -->
-      <img src="images/باب-خشب-02.jpg" alt="باب خشب">
       <img src="images/باب-خشب-03.jpg" alt="باب خشب">
-      <!-- ألمنيوم -->
-      <img src="images/aluminum-door-02.jpg" alt="باب ألمنيوم">
       <img src="images/aluminum-door-03.jpg" alt="باب ألمنيوم">
-      <!-- ديكور -->
-      <img src="images/decor-wall-02.jpg" alt="ديكور">
       <img src="images/decor-wall-03.jpg" alt="ديكور">
     </div>
   </section>
 
-  <!-- من نحن -->
-  <section class="about">
-    <h2>من نحن</h2>
-    <p>
-      مكتب الإبراهيم إخوان للعمران لتأمين كافة ما يتطلبه البيت الأنيق. ورشات متكاملة تهتم بأدق التفاصيل، نعمل بأفضل الخامات من النوع الأول، دقة في العمل، التزام بالمواعيد، إشراف مهندسين وفنيين بكفاءة عالية.
-    </p>
-  </section>
-
-  <!-- التواصل -->
-  <section class="contact">
-    <h2>للتواصل</h2>
-    <p>📞 محمد الإبراهيم: <a href="tel:+963995607888">00963995607888</a></p>
-    <p>📞 عبدالله الإبراهيم: <a href="tel:+963980007563">00963980007563</a></p>
-    <p>📧 الإيميل: <a href="mailto:alomran.s197@gmail.com">alomran.s197@gmail.com</a></p>
-    <a href="https://wa.me/963995607888" class="whatsapp-btn">💬 واتساب مباشر</a>
-  </section>
-
-  <!-- طلبات العملاء -->
-  <section class="client-form">
-    <h2>طلبات العملاء</h2>
-    <form action="mailto:alomran.s197@gmail.com" method="post" enctype="text/plain">
-      <label>الاسم:</label>
-      <input type="text" name="name" required>
-      <label>رقم الهاتف أو واتساب:</label>
-      <input type="text" name="phone" required>
-      <label>اختر من أعمالنا:</label>
-      <select name="service">
-        <option>تمديد كهرباء</option>
-        <option>تركيب سيراميك</option>
-        <option>أبواب خشب</option>
-        <option>مطابخ ألمنيوم</option>
-        <option>دهان ومعجونة</option>
-        <option>ديكور جبس</option>
-      </select>
-      <input type="submit" value="إرسال الطلب">
-    </form>
-  </section>
-
-  <!-- زر واتساب عائم -->
-  <a href="https://wa.me/963995607888" class="whatsapp-float">💬</a>
-
-  <!-- تذييل -->
-  <footer>
-    جميع الحقوق محفوظة © مكتب الإبراهيم إخوان للعمران
-  </footer>
-
-</body>
-</html>
+  <!-- قسم تواصل معنا -->
+  <section class="contact-section">
+    <h2>تواصل معنا</h2>
+    <p><strong>محمد الإبراهيم:</strong> <a href="https://wa.me/963995607888" target="_blank">00963995607888</a></p>
+    <p><strong>عبدالله الإبراهيم:</strong> <a href="https://wa.me/963980007563" target="_blank">00963980007563</a></p>
+    <p><strong>البريد الإلكتروني:</strong> <a href="mailto:alomran.s197@gmail.com">alomran.s197@gmail.com</a></p>
+    <a href="https://wa.me/963995607888" class="whatsapp-button" target="_blank">
