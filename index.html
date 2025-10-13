@@ -62,108 +62,6 @@
       0% { transform: translateX(-100%); }
       100% { transform: translateX(100%); }
     }
-    .services, .gallery-section, .about, .contact, .form-section {
-      padding: 40px 20px;
-    }
-    .services {
-      background-color: #2c2c2c;
-    }
-    .services ul {
-      list-style: none;
-      padding: 0;
-    }
-    .services li {
-      background-color: #1a1a1a;
-      border: 1px solid #ffd700;
-      border-radius: 8px;
-      padding: 12px;
-      margin-bottom: 10px;
-      box-shadow: 0 0 10px #800000;
-      transition: transform 0.3s ease;
-    }
-    .services li:hover {
-      transform: scale(1.02);
-      background-color: #2c2c2c;
-    }
-    .gallery-section {
-      background: radial-gradient(circle, #4b1c1c 0%, #1a1a1a 100%);
-    }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .gallery-item img {
-      width: 100%;
-      border-radius: 10px;
-      border: 2px solid #ffd700;
-      box-shadow: 0 0 10px #4b1c1c;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .gallery-item img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px #ffd700;
-    }
-    .about {
-      background-color: #2c2c2c;
-      border-top: 2px solid #ffd700;
-      border-bottom: 2px solid #ffd700;
-      box-shadow: inset 0 0 10px #800000;
-    }
-    .contact {
-      background-color: #1a1a1a;
-      border-top: 2px solid #ffd700;
-    }
-    .contact a {
-      color: #ffd700;
-      text-decoration: none;
-    }
-    .whatsapp-button {
-      display: inline-block;
-      margin-top: 20px;
-      background-color: #25D366;
-      color: #fff;
-      padding: 12px 25px;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 0 10px #25D366;
-      transition: background-color 0.3s ease;
-    }
-    .whatsapp-button:hover {
-      background-color: #1ebe5d;
-    }
-    .form-section {
-      background-color: #2c2c2c;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    input, select, textarea {
-      padding: 12px;
-      border-radius: 8px;
-      border: 1px solid #ffd700;
-      background-color: #000;
-      color: #fff;
-      font-size: 16px;
-    }
-    button {
-      background-color: #ffd700;
-      color: #4b1c1c;
-      padding: 14px;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    }
-    button:hover {
-      background-color: #e6c200;
-      box-shadow: 0 0 10px #ffd700;
-    }
   </style>
 </head>
 <body>
@@ -171,7 +69,7 @@
   <header class="hero">
     <div class="hero-content">
       <h1>مكتب الإبراهيم إخوان للعمران</h1>
-      <p>ترميم • تعهدات • إكساء • تنفيذ كافة أعمال الديكور</p>
+      <p>ترميم • تعهدات • إكساء • تنفيذ كافة أعمال التصاميم الداخلية</p>
     </div>
     <div class="hero-images">
       <img src="images/work-right.jpg" alt="أعمالنا" class="hero-img right">
@@ -181,10 +79,11 @@
 
   <div class="scroll-banner">
     <div class="scroll-text">
-      تمديد الكهرباء • تمديد الصحة • الياسة والطينة • تلبيس السيراميك • أبواب ونوافذ خشبية • مطابخ ألمنيوم هاي غلوس • رخام وغرانيت • ديكور جبسي وبلاستيكي • بدائل خشب ورخام وسيراميك • معجونة ودهان • قشط وبخ موبيليا
+      تمديد الكهرباء • تمديد الصحة • الياسة والطينة • تلبيس السيراميك • أبواب ونوافذ خشبية • مطابخ ألمنيوم هاي غلوس • رخام وغرانيت • تصاميم داخلية جبسية وبلاستيكية • بدائل خشب ورخام وسيراميك • معجونة ودهان • قشط وبخ موبيليا
     </div>
   </div>
 
+  <!-- قسم أعمالنا -->
   <section class="services">
     <h2>أعمالنا</h2>
     <ul>
@@ -194,21 +93,77 @@
       <li>تفصيل وتركيب جميع الأبواب والنوافذ الخشبية</li>
       <li>تفصيل وتركيب كافة أعمال الألمنيوم (مطابخ أمريكي هاي غلوس، أبواب، نوافذ، واجهات)</li>
       <li>تفصيل وتركيب كافة أنواع الرخام والغرانيت الطبيعي والصناعي (مجالي، رفوف، ملابن، واجهات)</li>
-      <li>تنفيذ كافة أعمال الديكور الجبسي والبلاستيكي</li>
+      <li>تنفيذ كافة أعمال التصاميم الداخلية الجبسية والبلاستيكية</li>
       <li>تفصيل وتركيب كافة أنواع البدائل (بديل خشب، بديل رخام، بديل سيراميك، بديل شيبورد)</li>
       <li>تنفيذ كافة أعمال المعجونة والدهان وديكوراتها</li>
       <li>قشط وبخ موبيليا (أبواب، نوافذ، أباجورات، عفش)</li>
     </ul>
   </section>
 
+  <!-- شريط العروض -->
   <div class="scroll-banner reverse">
     <div class="scroll-text">
       عروض خاصة على الإكساء الكامل مع التصاميم الداخلية • خصومات موسمية • تنفيذ احترافي بأسعار منافسة
     </div>
   </div>
 
+  <!-- معرض الصور -->
   <section class="gallery-section">
     <h2>معرض أعمالنا</h2>
     <div class="gallery-grid">
-      <div class="gallery-item"><img src="images/wood-01.jpg" alt="باب خشب"></div>
-      <div class="gallery-item"><img src="images/stone-
+      <div class="gallery-item">
+        <img src="images/wood-main.jpg" alt="أبواب ونوافذ خشبية">
+      </div>
+      <div class="gallery-item">
+        <img src="images/design-main.jpg" alt="تصاميم داخلية">
+      </div>
+      <div class="gallery-item">
+        <img src="images/kitchen-main.jpg" alt="مطابخ ألمنيوم">
+      </div>
+      <div class="gallery-item">
+        <img src="images/marble-main.jpg" alt="رخام وغرانيت">
+      </div>
+    </div>
+  </section>
+
+   <!-- من نحن -->
+  <section class="about">
+    <h2>من نحن</h2>
+    <p>
+      مكتب الإبراهيم إخوان للعمران لتأمين كافة ما يتطلبه البيت الأنيق.  
+      ورشات متكاملة تهتم بأدق التفاصيل، نعمل بأفضل الخامات من النوع الأول.  
+      دقة في العمل، التزام بالمواعيد، إشراف مهندسين وفنيين وكفاءات عالية.
+    </p>
+  </section>
+
+  <!-- التواصل -->
+  <section class="contact">
+    <h2>تواصل معنا</h2>
+    <p>📱 محمد الإبراهيم: <strong>00963995607888</strong></p>
+    <p>📱 عبدالله الإبراهيم: <strong>00963980007563</strong></p>
+    <p>📧 الإيميل: <a href="mailto:alomran.s197@gmail.com">alomran.s197@gmail.com</a></p>
+    <a class="whatsapp-button" href="https://wa.me/963995607888" target="_blank">راسلنا على واتساب</a>
+  </section>
+
+  <!-- طلبات العملاء -->
+  <section class="form-section">
+    <h2>طلبات العملاء</h2>
+    <form>
+      <input type="text" placeholder="الاسم الكامل" required>
+      <input type="tel" placeholder="رقم الهاتف أو واتساب" required>
+      <select required>
+        <option value="">اختر نوع الخدمة المطلوبة</option>
+        <option>ألمنيوم</option>
+        <option>رخام</option>
+        <option>تصاميم داخلية</option>
+        <option>دهان ومعجونة</option>
+        <option>سيراميك</option>
+        <option>أبواب ونوافذ خشبية</option>
+      </select>
+      <textarea rows="5" placeholder="اكتب تفاصيل طلبك هنا..." required></textarea>
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </section>
+
+</body>
+</html>
