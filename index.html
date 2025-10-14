@@ -4,8 +4,60 @@
   <meta charset="UTF-8">
   <title>مكتب الإبراهيم إخوان للعمران</title>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
+<style>
+  body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+  }
+
+  h1, h2 {
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .hero {
+    background: linear-gradient(to bottom, #4b1c1c, #1a1a1a);
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-content p {
+    color: #ffd700;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .hero-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #ffd700;
+    box-shadow: 0 0 15px #800000;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item img:hover {
+    transform: scale(1.05);
+  }
+</style>
+
       background-color: #1a1a1a;
       color: #fff;
       font-family: 'Cairo', sans-serif;
@@ -28,8 +80,29 @@
       font-size: 18px;
       margin-top: 10px;
     }
-    .hero-images {
-      display: flex;
+  .hero-images {
+  interior-fina : flex;
+  justify-content : space-between;
+  margin-top : 30 px;
+}
+
+</div>
+
+<div class="section wooden-doors">
+  <h2>أبواب خشب</h2>
+  <img src="wooden-door1.jpg" alt="باب خشب كلاسيكي" />
+</div>
+
+<div class="section marble-designs">
+  <h2>تصاميم الرخام</h2>
+  <img src="marble1.jpg" alt="رخام داخلي فاخر" />
+</div>
+
+<div class="section stone-facades">
+  <h2>واجهات حجر</h2>
+  <img src="stone1.jpg" alt="واجهة حجر طبيعي" />
+</div>
+
       justify-content: space-between;
       margin-top: 30px;
     }
@@ -108,21 +181,21 @@
   </div>
 
   <!-- معرض الصور -->
-  <section class="gallery-section">
-    <h2>معرض أعمالنا</h2>
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="images/wood-main.jpg" alt="أبواب ونوافذ خشبية">
-      </div>
-      <div class="gallery-item">
-        <img src="images/design-main.jpg" alt="تصاميم داخلية">
-      </div>
-      <div class="gallery-item">
-        <img src="images/kitchen-main.jpg" alt="مطابخ ألمنيوم">
-      </div>
-      <div class="gallery-item">
-        <img src="images/marble-main.jpg" alt="رخام وغرانيت">
-      </div>
+ <section class="gallery-section">
+  <h2>معرض أعمالنا</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/aluminum-door1.jpg" alt="أبواب ألمنيوم">
+    </div>
+    <div class="gallery-item">
+      <img src="images/wooden-door1.jpg" alt="أبواب خشب">
+    </div>
+    <div class="gallery-item">
+      <img src="images/marble1.jpg" alt="رخام فاخر">
+    </div>
+    <div class="gallery-item">
+      <img src="images/stone1.jpg" alt="واجهات حجرية">
+    </div>
     </div>
   </section>
 
