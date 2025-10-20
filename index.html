@@ -2,174 +2,49 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>مكتب الإبراهيم إخوان للعمران</title>
+  <title>مكتب العمران للتعهدات</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- خط كايرو -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
-  <!-- ربط ملف التنسيق -->
   <link rel="stylesheet" href="style.css">
- <style>
-body {
-  background-color: #1a1a1a;
-  color: #fff;
-  font-family: 'Cairo', sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.8;
-}
-
-header {
-  background-color: #800000;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 28px;
-  color: #ffd700;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-nav a {
-  color: #ffd700;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #ffffff;
-}
-
-.hero {
-  background: linear-gradient(to bottom, #4b1c1c, #1a1a1a);
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  padding: 20px;
-}
-
-.grid div {
-  background-color: #2a2a2a;
-  padding: 15px;
-  border-radius: 10px;
-  border: 2px solid #800000;
-  text-align: center;
-}
-
-.gallery {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-
-.gallery img {
-  width: 200px;
-  border-radius: 10px;
-  border: 3px solid #ffd700;
-  box-shadow: 0 0 15px #800000;
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-#client-request {
-  background-color: #2a2a2a;
-  padding: 30px;
-  border-radius: 10px;
-  margin: 20px;
-}
-
-#client-request label {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-#client-request input,
-#client-request select,
-#client-request textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 5px;
-  border: none;
-  background-color: #1a1a1a;
-  color: #fff;
-}
-
-#client-request button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #800000;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#client-request button:hover {
-  background-color: #a00000;
-}
-
-footer {
-  background-color: #4b1c1c;
-  text-align: center;
-  padding: 10px;
-  font-size: 14px;
-  color: #ccc;
-}
-
+</head>
+<body>
 
   <header>
-    <h1>مكتب الإبراهيم إخوان للعمران</h1>
+    <h1>مكتب العمران للتعهدات</h1>
     <nav>
       <ul>
-        <li><a href="#services">خدماتنا</a></li>
-        <li><a href="#portfolio">معرض الأعمال</a></li>
         <li><a href="#about">من نحن</a></li>
-        <li><a href="#client-request">طلب خدمة</a></li>
+        <li><a href="#services">الخدمات</a></li>
+        <li><a href="#gallery">المعرض</a></li>
+        <li><a href="#contact">طلب خدمة</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>نحو بناء أفضل</h2>
-    <p>نقدم خدمات تعهدات متكاملة بجودة عالية واحترافية.</p>
+    <h2>نحو بناء أجمل</h2>
+    <p>نحن متخصصون في الترميم، الإكساء، الديكور، والتشطيب النهائي.</p>
+  </section>
+
+  <section id="about">
+    <h2>من نحن</h2>
+    <p>فريق هندسي محترف يقدم خدمات التعهدات بجودة عالية وسرعة تنفيذ.</p>
   </section>
 
   <section id="services">
-    <h2>خدماتنا</h2>
+    <h2>الخدمات</h2>
     <div class="grid">
       <div>تمديد الكهرباء والصحة</div>
       <div>تلبيس السيراميك</div>
-      <div>أبواب ونوافذ خشبية</div>
       <div>مطابخ ألمنيوم</div>
-      <div>رخام وغرانيت</div>
       <div>تصاميم داخلية</div>
       <div>دهان ومعجونة</div>
+      <div>رخام وغرانيت</div>
     </div>
   </section>
 
-  <section id="portfolio">
-    <h2>معرض الأعمال</h2>
+  <section id="gallery">
+    <h2>المعرض</h2>
     <div class="gallery">
       <img src="img1.jpg" alt="مشروع 1">
       <img src="img2.jpg" alt="مشروع 2">
@@ -177,43 +52,29 @@ footer {
     </div>
   </section>
 
-  <section id="about">
-    <h2>من نحن</h2>
-    <p>نحن فريق متخصص في تنفيذ كافة أعمال البناء والتشطيب باحترافية عالية وخبرة تمتد لسنوات.</p>
-  </section>
-
-  <section id="client-request">
+  <section id="contact">
     <h2>طلب خدمة</h2>
     <form id="whatsappForm">
-      <label for="name">الاسم الكامل:</label>
+      <label>الاسم الكامل:</label>
       <input type="text" id="name" required>
-
-      <label for="phone">رقم الهاتف:</label>
+      <label>رقم الهاتف:</label>
       <input type="text" id="phone" required>
-
-      <label for="service">نوع الخدمة:</label>
+      <label>نوع الخدمة:</label>
       <select id="service">
         <option>تمديد الكهرباء والصحة</option>
         <option>تلبيس السيراميك</option>
-        <option>أبواب ونوافذ خشبية</option>
         <option>مطابخ ألمنيوم</option>
-        <option>رخام وغرانيت</option>
-        <option>تصاميم داخلية</option>
-        <option>دهان ومعجونة</option>
       </select>
-
-      <label for="details">تفاصيل إضافية:</label>
+      <label>تفاصيل إضافية:</label>
       <textarea id="details" rows="4" required></textarea>
-
       <button type="submit">إرسال عبر واتساب</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 مكتب الإبراهيم إخوان للعمران</p>
+    <p>© 2025 مكتب العمران للتعهدات</p>
   </footer>
 
-  <!-- سكريبت واتساب -->
   <script>
     document.getElementById("whatsappForm").addEventListener("submit", function(e) {
       e.preventDefault();
@@ -230,4 +91,5 @@ footer {
 
 </body>
 </html>
+
 
