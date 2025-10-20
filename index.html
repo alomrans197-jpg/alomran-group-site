@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+body {
   background-color: #1a1a1a;
   color: #fff;
   font-family: 'Cairo', sans-serif;
@@ -15,48 +15,98 @@
   line-height: 1.8;
 }
 
+/* رأس الصفحة */
 header {
   background-color: #800000;
   padding: 20px;
   text-align: center;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #ffd700;
+}
+
+/* قائمة التنقل */
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 10px 0 0;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 nav a {
   color: #ffd700;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
+nav a:hover {
+  color: #ffffff;
+}
+
+/* قسم البطل */
 .hero {
   background: linear-gradient(to bottom, #4b1c1c, #1a1a1a);
   padding: 40px 20px;
   text-align: center;
 }
 
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* شبكة الخدمات */
+#services {
+  padding: 40px 20px;
+  text-align: center;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.grid div {
+  background-color: #2a2a2a;
   padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #800000;
+  transition: transform 0.3s ease;
+}
+
+.grid div:hover {
+  transform: scale(1.05);
+}
+
+/* معرض الصور */
+#portfolio {
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .gallery {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-  padding: 20px;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .gallery img {
-  width: 200px;
+  width: 220px;
   border-radius: 10px;
   border: 3px solid #ffd700;
   box-shadow: 0 0 15px #800000;
@@ -67,12 +117,22 @@ nav a {
   transform: scale(1.05);
 }
 
-footer {
-  background-color: #4b1c1c;
+/* قسم العروض */
+#offers {
+  background-color: #2a2a2a;
+  padding: 30px;
   text-align: center;
-  padding: 10px;
-  font-size: 14px;
+  margin: 20px;
+  border-radius: 10px;
 }
+
+/* قسم من نحن */
+#about {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* نموذج الطلب */
 #client-request {
   background-color: #2a2a2a;
   padding: 30px;
@@ -95,6 +155,8 @@ footer {
   margin-top: 5px;
   border-radius: 5px;
   border: none;
+  background-color: #1a1a1a;
+  color: #fff;
 }
 
 #client-request button {
@@ -105,7 +167,22 @@ footer {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+#client-request button:hover {
+  background-color: #a00000;
+}
+
+/* تذييل الصفحة */
+footer {
+  background-color: #4b1c1c;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
 
 
   <header>
