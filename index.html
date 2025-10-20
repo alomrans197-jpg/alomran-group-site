@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>مكتب الإبراهيم إخوان للعمران</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- خط كايرو -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <!-- ربط ملف التنسيق -->
   <link rel="stylesheet" href="style.css">
-</head>
+ <style>
 body {
   background-color: #1a1a1a;
   color: #fff;
@@ -15,7 +18,6 @@ body {
   line-height: 1.8;
 }
 
-/* رأس الصفحة */
 header {
   background-color: #800000;
   padding: 20px;
@@ -28,7 +30,6 @@ header h1 {
   color: #ffd700;
 }
 
-/* قائمة التنقل */
 nav ul {
   list-style: none;
   padding: 0;
@@ -42,71 +43,43 @@ nav a {
   color: #ffd700;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 nav a:hover {
   color: #ffffff;
 }
 
-/* قسم البطل */
 .hero {
   background: linear-gradient(to bottom, #4b1c1c, #1a1a1a);
   padding: 40px 20px;
   text-align: center;
 }
 
-.hero h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 18px;
-  color: #ccc;
-}
-
-/* شبكة الخدمات */
-#services {
-  padding: 40px 20px;
-  text-align: center;
-}
-
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
 }
 
 .grid div {
   background-color: #2a2a2a;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   border: 2px solid #800000;
-  transition: transform 0.3s ease;
-}
-
-.grid div:hover {
-  transform: scale(1.05);
-}
-
-/* معرض الصور */
-#portfolio {
-  padding: 40px 20px;
   text-align: center;
 }
 
 .gallery {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
+  gap: 15px;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 .gallery img {
-  width: 220px;
+  width: 200px;
   border-radius: 10px;
   border: 3px solid #ffd700;
   box-shadow: 0 0 15px #800000;
@@ -117,28 +90,11 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* قسم العروض */
-#offers {
-  background-color: #2a2a2a;
-  padding: 30px;
-  text-align: center;
-  margin: 20px;
-  border-radius: 10px;
-}
-
-/* قسم من نحن */
-#about {
-  padding: 30px 20px;
-  text-align: center;
-}
-
-/* نموذج الطلب */
 #client-request {
   background-color: #2a2a2a;
   padding: 30px;
   border-radius: 10px;
   margin: 20px;
-  color: #fff;
 }
 
 #client-request label {
@@ -167,14 +123,12 @@ nav a:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 #client-request button:hover {
   background-color: #a00000;
 }
 
-/* تذييل الصفحة */
 footer {
   background-color: #4b1c1c;
   text-align: center;
@@ -184,23 +138,21 @@ footer {
 }
 
 
-
   <header>
     <h1>مكتب الإبراهيم إخوان للعمران</h1>
     <nav>
       <ul>
         <li><a href="#services">خدماتنا</a></li>
         <li><a href="#portfolio">معرض الأعمال</a></li>
-        <li><a href="#offers">العروض</a></li>
         <li><a href="#about">من نحن</a></li>
-        <li><a href="#contact">تواصل معنا</a></li>
+        <li><a href="#client-request">طلب خدمة</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>نحو بيت أنيق... نعتني بكل التفاصيل</h2>
-    <p>ترميم • تعهدات • إكساء • تصاميم داخلية</p>
+    <h2>نحو بناء أفضل</h2>
+    <p>نقدم خدمات تعهدات متكاملة بجودة عالية واحترافية.</p>
   </section>
 
   <section id="services">
@@ -209,10 +161,9 @@ footer {
       <div>تمديد الكهرباء والصحة</div>
       <div>تلبيس السيراميك</div>
       <div>أبواب ونوافذ خشبية</div>
-      <div>مطابخ ألمنيوم هاي غلوس</div>
+      <div>مطابخ ألمنيوم</div>
       <div>رخام وغرانيت</div>
       <div>تصاميم داخلية</div>
-      <div>بدائل خشب ورخام</div>
       <div>دهان ومعجونة</div>
     </div>
   </section>
@@ -220,94 +171,62 @@ footer {
   <section id="portfolio">
     <h2>معرض الأعمال</h2>
     <div class="gallery">
-      <img src="door.jpg" alt="باب خشب كلاسيكي">
-      <img src="marble.jpg" alt="رخام داخلي فاخر">
-      <img src="facade.jpg" alt="واجهة حجر طبيعي">
+      <img src="img1.jpg" alt="مشروع 1">
+      <img src="img2.jpg" alt="مشروع 2">
+      <img src="img3.jpg" alt="مشروع 3">
     </div>
-  </section>
-
-  <section id="offers">
-    <h2>عروض خاصة</h2>
-    <p>خصومات موسمية على الإكساء الكامل مع التصاميم الداخلية</p>
   </section>
 
   <section id="about">
     <h2>من نحن</h2>
-    <p>ورشات متكاملة تهتم بأدق التفاصيل، نعمل بأفضل الخامات من النوع الأول، بإشراف مهندسين وفنيين ذوي كفاءة عالية.</p>
+    <p>نحن فريق متخصص في تنفيذ كافة أعمال البناء والتشطيب باحترافية عالية وخبرة تمتد لسنوات.</p>
   </section>
- <section id="client-request">
-  <h2>طلب خدمة</h2>
-  <form id="whatsappForm">
-    <input type="text" id="name" placeholder="الاسم الكامل" required>
-    <input type="text" id="phone" placeholder="رقم الهاتف أو واتساب" required>
-    <select id="service">
-      <option>تمديد الكهرباء والصحة</option>
-      <option>تلبيس السيراميك</option>
-      <option>أبواب ونوافذ خشبية</option>
-      <option>مطابخ ألمنيوم</option>
-      <option>رخام وغرانيت</option>
-      <option>تصاميم داخلية</option>
-      <option>دهان ومعجونة</option>
-    </select>
-    <textarea id="details" placeholder="اكتب تفاصيل طلبك هنا..." rows="4" required></textarea>
-    <button type="submit">إرسال عبر واتساب</button>
-  </form>
-</section>
- 
 
-  <section id="contact">
-    <h2>تواصل معنا</h2>
-    <p>📱 محمد الإبراهيم: 00963995607888</p>
-    <p>📱 عبدالله الإبراهيم: 00963980007563</p>
-    <p>📧 alomran.s197@gmail.com</p>
-  </section>
   <section id="client-request">
-  <h2>طلب خدمة</h2>
-  <form id="whatsappForm">
-    <label>الاسم الكامل:</label>
-    <input type="text" id="name" required>
+    <h2>طلب خدمة</h2>
+    <form id="whatsappForm">
+      <label for="name">الاسم الكامل:</label>
+      <input type="text" id="name" required>
 
-    <label>رقم الهاتف:</label>
-    <input type="text" id="phone" required>
+      <label for="phone">رقم الهاتف:</label>
+      <input type="text" id="phone" required>
 
-    <label>اختر نوع الخدمة:</label>
-    <select id="service">
-      <option>تمديد الكهرباء والصحة</option>
-      <option>تلبيس السيراميك</option>
-      <option>أبواب ونوافذ خشبية</option>
-      <option>مطابخ ألمنيوم</option>
-      <option>رخام وغرانيت</option>
-      <option>تصاميم داخلية</option>
-      <option>دهان ومعجونة</option>
-    </select>
+      <label for="service">نوع الخدمة:</label>
+      <select id="service">
+        <option>تمديد الكهرباء والصحة</option>
+        <option>تلبيس السيراميك</option>
+        <option>أبواب ونوافذ خشبية</option>
+        <option>مطابخ ألمنيوم</option>
+        <option>رخام وغرانيت</option>
+        <option>تصاميم داخلية</option>
+        <option>دهان ومعجونة</option>
+      </select>
 
-    <label>تفاصيل الطلب:</label>
-    <textarea id="details" rows="4" required></textarea>
+      <label for="details">تفاصيل إضافية:</label>
+      <textarea id="details" rows="4" required></textarea>
 
-    <button type="submit">إرسال عبر واتساب</button>
-  </form>
-</section>
-
+      <button type="submit">إرسال عبر واتساب</button>
+    </form>
+  </section>
 
   <footer>
-    <p>© جميع الحقوق محفوظة لمكتب الإبراهيم إخوان للعمران</p>
+    <p>© 2025 مكتب الإبراهيم إخوان للعمران</p>
   </footer>
-<script>
-  document.getElementById("whatsappForm").addEventListener("submit", function(e) {
-    e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
-    const service = document.getElementById("service").value;
-    const details = document.getElementById("details").value;
-
-    const message = `مرحبًا، أنا ${name}، رقمي ${phone}. أرغب بطلب خدمة: ${service}. التفاصيل: ${details}`;
-    const whatsappNumber = "963995607888"; // رقم محمد الإبراهيم بدون + أو 00
-
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
-  });
-</script>
+  <!-- سكريبت واتساب -->
+  <script>
+    document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const service = document.getElementById("service").value;
+      const details = document.getElementById("details").value;
+      const message = `مرحبًا، أنا ${name}، رقمي ${phone}. أرغب بخدمة: ${service}. التفاصيل: ${details}`;
+      const whatsappNumber = "963995607888";
+      const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    });
+  </script>
 
 </body>
 </html>
