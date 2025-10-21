@@ -22,6 +22,33 @@ nav ul {
   padding: 0;
   margin: 10px 0 0;
 }
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
 
 nav a {
   color: #ffd700;
@@ -39,6 +66,22 @@ nav a {
 section {
   padding: 40px 20px;
   text-align: center;
+}
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInSection 1s ease forwards;
+}
+
+@keyframes fadeInSection {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+section:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
 
 .grid {
@@ -65,6 +108,22 @@ section {
   width: 200px;
   border-radius: 10px;
   box-shadow: 0 0 10px #aaa;
+}
+.gallery img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.gallery img {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 form {
@@ -94,10 +153,63 @@ form button {
   border-radius: 5px;
   cursor: pointer;
 }
+form button:hover {
+  background-color: #00395a;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
 
 footer {
   background-color: #004d7a;
   color: #fff;
   text-align: center;
   padding: 10px;
+}
+.marquee.services {
+  background-color: #eee;
+  color: #004d7a;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.marquee.services p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollServices 20s linear infinite;
+}
+
+@keyframes scrollServices {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.marquee.offers {
+  background-color: #ffd700;
+  color: #004d7a;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.marquee.offers p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollOffers 18s linear infinite;
+}
+
+@keyframes scrollOffers {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
