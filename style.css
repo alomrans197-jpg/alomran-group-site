@@ -22,6 +22,21 @@ nav ul {
   padding: 0;
   margin: 10px 0 0;
 }
+.main-header {
+  background-image: url('images/interior-design3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+}
+.main-header .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* طبقة شفافة */
+  padding: 60px 20px;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
