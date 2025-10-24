@@ -279,25 +279,48 @@ footer {
   body {
     font-size: 16px;
     padding: 10px;
+    overflow-x: hidden;
   }
 
   header, nav, section, footer {
     width: 100%;
-    display: block;
   }
 
   nav ul {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
     padding: 0;
+    margin: 0;
   }
 
   nav li {
-    margin-bottom: 10px;
+    margin: 5px 0;
   }
 
   img {
     max-width: 100%;
     height: auto;
   }
+
+  .main-header {
+    height: auto;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .main-header .overlay {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .marquee.offers p {
+    padding-left: 100%;
+    animation: scrollOffers 18s linear infinite;
+    font-size: 16px;
+  }
 }
+
 
