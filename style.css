@@ -197,67 +197,42 @@ section:hover {
     transform: translateX(-100%);
   }
 }
+<!-- تنسيق CSS -->
+<style>
+  #contact-info {
+    background-color: #f0f4f8;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Cairo', sans-serif;
+    max-width: 600px;
+    margin: auto;
+  }
 
-/* === قسم طلب خدمة === */
-#contact {
-  background-color: #f9f9f9;
-  padding: 40px 20px;
-  text-align: center;
-}
+  .contact-box input,
+  .contact-box textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
 
-#contact h2 {
-  color: #004d7a;
-  margin-bottom: 10px;
-}
+  .contact-box button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
 
-#contact p {
-  margin-bottom: 30px;
-  color: #333;
-}
-
-#contact form {
-  max-width: 600px;
-  margin: auto;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-#contact label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
-  color: #004d7a;
-  text-align: right;
-}
-
-#contact input,
-#contact select,
-#contact textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-family: 'Cairo', sans-serif;
-}
-
-#contact button {
-  margin-top: 20px;
-  padding: 12px 25px;
-  background-color: #004d7a;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#contact button:hover {
-  background-color: #00395a;
-  transition: all 0.3s ease;
-}
+  .contact-box button:hover {
+    background-color: #1ebe5d;
+  }
+</style>
 
 /* === قسم اتصل بنا === */
 #contact-info {
