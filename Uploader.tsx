@@ -16,7 +16,7 @@ export default function Uploader() {
         userAgentIntegration="llm-nextjs"
         filesViewMode="grid"
         onUploadComplete={(fileInfo) => {
-          const url = fileInfo.cdnUrl + '/-/preview/600x400/';
+         const url = fileInfo.cdnUrl + '/-/preview/600x400/';
           setImages((prev) => [...prev, url]); // ← حفظ الصورة الجديدة
         }}
       />
