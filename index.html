@@ -70,6 +70,7 @@
       <img src="img1.jpg" alt="مشروع 1">
       <img src="img2.jpg" alt="مشروع 2">
       <img src="img3.jpg" alt="مشروع 3">
+      <img src="https://ucarecdn.com/a21f3634-48d7-4262-8e98-b21bba8f096f/-/preview/600x400/" alt="مشروع جديد">
     </div>
   </section>
 <section id="upload">
@@ -113,16 +114,21 @@
     window.open(url, "_blank");
   });
 </script>
-
 <script>
   uploadcare.Widget('[role=uploadcare-uploader]').onUploadComplete(info => {
     const gallery = document.querySelector('.gallery');
     const img = document.createElement('img');
-    img.src = info.cdnUrl;
+    img.src = info.cdnUrl + '/-/preview/600x400/';
     img.alt = 'صورة مرفوعة';
+    img.style.width = '100%';
+    img.style.maxWidth = '400px';
+    img.style.margin = '10px';
+    img.style.borderRadius = '8px';
     gallery.appendChild(img);
   });
 </script>
+
+
 
 </body>
 </html>
