@@ -129,24 +129,40 @@
   </div>
 </section>
 
-  <section id="contact">
-    <h2>طلب خدمة</h2>
-    <form id="whatsappForm">
-      <label>الاسم الكامل:</label>
-      <input type="text" id="name" required>
-      <label>رقم الهاتف:</label>
-      <input type="text" id="phone" required>
-      <label>نوع الخدمة:</label>
-      <select id="service">
-        <option>تمديد الكهرباء والصحة</option>
-        <option>تلبيس السيراميك</option>
-        <option>مطابخ ألمنيوم</option>
-      </select>
-      <label>تفاصيل إضافية:</label>
-      <textarea id="details" rows="4" required></textarea>
-      <button type="submit">إرسال عبر واتساب</button>
-    </form>
-  </section>
+<section id="contact">
+  <h2>طلب خدمة</h2>
+  <p>يرجى تعبئة النموذج وسنقوم بالتواصل معكم عبر واتساب</p>
+  <form id="whatsappForm">
+    <label for="name">الاسم الكامل:</label>
+    <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+
+    <label for="phone">رقم الهاتف:</label>
+    <input type="text" id="phone" name="phone" placeholder="مثال: 0999999999" required>
+
+    <label for="service">نوع الخدمة المطلوبة:</label>
+    <select id="service" name="service" required>
+      <option value="">اختر نوع الخدمة</option>
+      <option>تمديد الكهرباء والصحة</option>
+      <option>تلبيس السيراميك</option>
+      <option>مطابخ ألمنيوم</option>
+    </select>
+
+    <label for="details">تفاصيل إضافية:</label>
+    <textarea id="details" name="details" rows="4" placeholder="اكتب أي تفاصيل إضافية..." required></textarea>
+
+    <button type="submit">إرسال عبر واتساب</button>
+  </form>
+</section>
+  
+<section id="contact-info">
+  <h2>تواصل معنا</h2>
+  <div class="contact-box">
+    <p><strong>الإشراف:</strong> المهندس محمد الإبراهيم – المهندس عبدالله الإبراهيم</p>
+    <p><strong>رقم الهاتف:</strong> <a href="tel:+963995607888">00963 995 607 888</a></p>
+    <p><strong>العنوان:</strong> سوريا – دمشق</p>
+    <p><strong>البريد الإلكتروني:</strong> <a href="mailto:alomran.s197@gmail.com">alomran.s197@gmail.com</a></p>
+  </div>
+</section>
 
   <footer>
     <p>© 2025 مكتب العمران للتعهدات</p>
