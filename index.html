@@ -55,7 +55,6 @@
       <h3>مطابخ ألمنيوم</h3>
       <p>مطابخ متينة وعصرية بتصاميم مخصصة.</p>
     </div>
-    <!-- أضف المزيد من البطاقات حسب الخدمات -->
   </div>
 </section>
 <!-- شريط متحرك للعروض الخاصة -->
@@ -70,13 +69,9 @@
       <img src="img1.jpg" alt="مشروع 1">
       <img src="img2.jpg" alt="مشروع 2">
       <img src="img3.jpg" alt="مشروع 3">
-      <img src="https://ucarecdn.com/a21f3634-48d7-4262-8e98-b21bba8f096f/-/preview/600x400/" alt="مشروع جديد">
+     <img src="images/wood1.jpg" alt="مشروع خشب وألمنيوم">
     </div>
   </section>
-<section id="upload">
-  <h2>رفع صورة جديدة</h2>
-  <input type="hidden" role="uploadcare-uploader" data-crop="3:2" data-clearable />
-</section>
 
   <section id="contact">
     <h2>طلب خدمة</h2>
@@ -113,21 +108,6 @@
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   });
-</script>
-<script>
-  uploadcare.Widget('[role=uploadcare-uploader]').onUploadComplete(info => {
-    const gallery = document.querySelector('.gallery');
-    const img = document.createElement('img');
-    img.src = info.cdnUrl + '/-/preview/600x400/';
-    img.alt = 'صورة مرفوعة';
-    img.style.width = '100%';
-    img.style.maxWidth = '400px';
-    img.style.margin = '10px';
-    img.style.borderRadius = '8px';
-    gallery.appendChild(img);
-  });
-</script>
-
 
 
 </body>
