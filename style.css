@@ -264,7 +264,11 @@ section:hover {
   background-color: #f0f4f8;
   padding: 40px 20px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Cairo', sans-serif;
 }
+
 
 .contact-box {
   max-width: 600px;
