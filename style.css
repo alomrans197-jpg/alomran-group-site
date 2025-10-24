@@ -189,9 +189,14 @@ footer {
   font-size: 16px;
 }
 
-.marquee.services {
-  background-color: #eee;
-  color: #004d7a;
+.marquee.offers {
+  background-color: #222;
+  color: #ffd700;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .marquee.offers {
