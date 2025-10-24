@@ -6,8 +6,10 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.8;
+  overflow-x: hidden;
 }
 
+/* === رأس الصفحة === */
 header {
   background-color: #004d7a;
   color: #fff;
@@ -15,6 +17,7 @@ header {
   text-align: center;
 }
 
+/* === القائمة === */
 nav ul {
   list-style: none;
   display: flex;
@@ -40,7 +43,6 @@ nav a {
   background-repeat: no-repeat;
   position: relative;
   color: white;
-  font-family: 'Cairo', sans-serif;
   text-align: center;
 }
 
@@ -56,7 +58,6 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 /* === الأقسام العامة === */
@@ -85,7 +86,6 @@ section:hover {
   background: linear-gradient(to right, #00c6ff, #0072ff);
   color: #fff;
   padding: 40px 20px;
-  text-align: center;
 }
 
 /* === الشبكة والبطاقات === */
@@ -156,13 +156,6 @@ section:hover {
   }
 }
 
-@media (max-width: 600px) {
-  .gallery img {
-    width: 100%;
-    height: auto;
-  }
-}
-
 /* === شريط العروض المتحرك === */
 .marquee.services,
 .marquee.offers {
@@ -190,49 +183,9 @@ section:hover {
 }
 
 @keyframes scrollOffers {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
-<!-- تنسيق CSS -->
-<style>
-  #contact-info {
-    background-color: #f0f4f8;
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    font-family: 'Cairo', sans-serif;
-    max-width: 600px;
-    margin: auto;
-  }
-
-  .contact-box input,
-  .contact-box textarea {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  .contact-box button {
-    background-color: #25D366;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-
-  .contact-box button:hover {
-    background-color: #1ebe5d;
-  }
-</style>
 
 /* === قسم اتصل بنا === */
 #contact-info {
@@ -241,20 +194,40 @@ section:hover {
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  font-family: 'Cairo', sans-serif;
-}
-
-
-.contact-box {
   max-width: 600px;
   margin: auto;
+}
+
+.contact-box {
   background-color: #fff;
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  font-family: 'Cairo', sans-serif;
   color: #004d7a;
   line-height: 1.8;
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-box button {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-box button:hover {
+  background-color: #1ebe5d;
 }
 
 .contact-box a {
@@ -275,19 +248,9 @@ footer {
   padding: 10px;
 }
 
+/* === تحسين العرض على الجوال === */
 @media (max-width: 768px) {
-  body {
-    font-size: 16px;
-    padding: 10px;
-    overflow-x: hidden;
-  }
-
-  header, nav, section, footer {
-    width: 100%;
-  }
-
   nav ul {
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -299,16 +262,9 @@ footer {
     margin: 5px 0;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
   .main-header {
     height: auto;
     padding: 20px;
-    background-size: cover;
-    background-position: center;
   }
 
   .main-header .overlay {
@@ -316,9 +272,12 @@ footer {
     background-color: rgba(0, 0, 0, 0.6);
   }
 
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+  }
+
   .marquee.offers p {
-    padding-left: 100%;
-    animation: scrollOffers 18s linear infinite;
     font-size: 16px;
   }
 }
