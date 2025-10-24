@@ -13,6 +13,16 @@ header {
   padding: 20px;
   text-align: center;
 }
+<style>
+  .main-header {
+    height: 100vh;
+    background-image: url('https://i.ibb.co/nJffytd/main-facade1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+</style>
+
 
 nav ul {
   list-style: none;
