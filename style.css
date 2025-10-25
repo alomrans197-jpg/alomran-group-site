@@ -143,10 +143,10 @@ section:hover {
   transform: translateY(20px);
   animation: fadeInUp 0.8s ease forwards;
   transition: transform 0.3s ease;
-}
-
+ }
 .gallery img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) rotate(0.5deg);
+  box-shadow: 0 0 15px #888;
 }
 
 @keyframes fadeInUp {
@@ -250,13 +250,14 @@ footer {
 
 /* === تحسين العرض على الجوال === */
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-  }
+nav ul {
+  display: none;
+}
+
+nav.active ul {
+  display: flex;
+}
+
 
   nav li {
     margin: 5px 0;
@@ -272,10 +273,15 @@ footer {
     background-color: rgba(0, 0, 0, 0.6);
   }
 
-  .gallery img {
-    max-width: 100%;
-    height: auto;
-  }
+ .gallery img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #aaa;
+}
+
 
   .marquee.offers p {
     font-size: 16px;
