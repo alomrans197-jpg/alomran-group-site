@@ -42,8 +42,11 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  color: white;
 }
 
 .main-header .overlay {
@@ -58,7 +61,25 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  color: #fff;
 }
+
+.main-header .overlay h1,
+.main-header .overlay p {
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 600px) {
+  .main-header .overlay h1 {
+    font-size: 1.8rem;
+  }
+  .main-header .overlay p {
+    font-size: 1rem;
+  }
+}
+
+
 
 /* === الأقسام العامة === */
 section {
