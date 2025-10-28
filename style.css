@@ -79,14 +79,19 @@ section:hover {
 
 /* === قسم البطل === */
 .hero {
+  height: 100vh; /* يجعل القسم يغطي كامل الشاشة */
   background-image: url('https://i.ibb.co/snXDxkG/main-banner.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 100px 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 
 
 /* === الشبكة والبطاقات === */
