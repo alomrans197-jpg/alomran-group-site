@@ -92,6 +92,11 @@ section:hover {
   align-items: center;
 }
 
+.hero {
+  min-height: 100vh;
+  padding: 100px 20px;
+}
+
 
 
 /* === الشبكة والبطاقات === */
