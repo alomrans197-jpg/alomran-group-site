@@ -124,21 +124,35 @@
 <section id="contact-info">
   <h2>طلب خدمة عبر واتساب</h2>
   <form id="whatsappForm" class="contact-box">
-    <p><label>الاسم:</label><br>
-      <input type="text" id="name" required>
-    </p>
-    <p><label>رقم الهاتف:</label><br>
-      <input type="text" id="phone" required>
-    </p>
-    <p><label>الخدمة المطلوبة:</label><br>
-      <input type="text" id="service" required>
-    </p>
-    <p><label>تفاصيل إضافية:</label><br>
-      <textarea id="details" rows="4"></textarea>
-    </p>
-    <button type="submit">إرسال عبر واتساب</button>
+    <label for="name">👤 الاسم:</label>
+    <input type="text" id="name" required>
+
+    <label for="phone">📞 رقم الهاتف:</label>
+    <input type="text" id="phone" required>
+
+    <label for="address">📍 العنوان:</label>
+    <input type="text" id="address" required>
+
+    <label for="service">🛠️ نوع الخدمة:</label>
+    <select id="service" required>
+      <option value="">اختر الخدمة</option>
+      <option>أعمال إكساء كامل</option>
+      <option>تنفيذ ديكور</option>
+      <option>أعمال رخام</option>
+      <option>أعمال حجر خارجي</option>
+      <option>أعمال سيراميك</option>
+      <option>أعمال الدهان</option>
+      <option>أعمال المطابخ</option>
+      <option>أعمال الخشب</option>
+    </select>
+
+    <label for="details">📝 تفاصيل إضافية:</label>
+    <textarea id="details" rows="4"></textarea>
+
+    <button type="submit">📲 إرسال عبر واتساب</button>
   </form>
 </section>
+
   
 <p><strong>رقم الهاتف:</strong></p>
 <ul style="list-style: none; padding: 0;">
