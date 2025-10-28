@@ -79,10 +79,15 @@ section:hover {
 
 /* === قسم البطل === */
 .hero {
-  background: linear-gradient(to right, #00c6ff, #0072ff);
+  background-image: url('https://i.ibb.co/snXDxkG/main-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
-  padding: 40px 20px;
+  padding: 100px 20px;
+  text-align: center;
 }
+
 
 /* === الشبكة والبطاقات === */
 .grid {
