@@ -3,6 +3,7 @@ body {
   direction: rtl;
   text-align: right;
   font-family: 'Cairo', sans-serif;
+  background-color: #f9f9f9; 
 }
 
   margin: 0;
