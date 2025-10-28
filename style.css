@@ -32,53 +32,26 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
-
 /* === الواجهة الرئيسية === */
+
 .main-header {
-  height: 100vh;
-  width: 100%;
-  background-image: url('https://i.ibb.co/nJffytd/main-facade1.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
-  color: white;
+  background-color: #f8f4f0;
+  padding: 20px 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: 'Cairo', sans-serif;
 }
-
-.main-header .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
+.nav-menu a {
+  margin-left: 20px;
+  color: #6c4f3d;
+  text-decoration: none;
+  font-weight: bold;
 }
-
-.main-header .overlay h1,
-.main-header .overlay p {
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+.nav-menu a:hover {
+  color: #bfa27c;
 }
-
-@media (max-width: 600px) {
-  .main-header .overlay h1 {
-    font-size: 1.8rem;
-  }
-  .main-header .overlay p {
-    font-size: 1rem;
-  }
-}
-
 
 
 /* === الأقسام العامة === */
