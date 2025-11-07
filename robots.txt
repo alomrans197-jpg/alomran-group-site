@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alomrans197-jpg.github.io/alomran-group-site/sitemap.xml
