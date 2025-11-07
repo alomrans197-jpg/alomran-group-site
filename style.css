@@ -79,7 +79,8 @@ section:hover {
 
 /* === قسم البطل === */
 .hero {
-  height: 100vh; /* يجعل القسم يغطي كامل الشاشة */
+  min-height: 100vh;
+  padding: 100px 20px;
   background-image: url('https://i.ibb.co/snXDxkG/main-banner.jpg');
   background-size: cover;
   background-position: center;
@@ -90,13 +91,15 @@ section:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
 }
+
 
 .hero {
   min-height: 100vh;
   padding: 100px 20px;
 }
-
 
 
 /* === الشبكة والبطاقات === */
@@ -254,14 +257,17 @@ footer {
 
 /* === تحسين العرض على الجوال === */
 @media (max-width: 768px) {
-nav ul {
-  display: none;
-}
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
 
-nav.active ul {
-  display: flex;
-}
-
+  nav.active ul {
+    display: flex;
+  }
 
   nav li {
     margin: 5px 0;
@@ -270,6 +276,8 @@ nav.active ul {
   .main-header {
     height: auto;
     padding: 20px;
+    flex-direction: column;
+    text-align: center;
   }
 
   .main-header .overlay {
@@ -277,18 +285,19 @@ nav.active ul {
     background-color: rgba(0, 0, 0, 0.6);
   }
 
- .gallery img {
-  width: 100%;
-  max-width: 300px;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #aaa;
-}
-
+  .gallery img {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+  }
 
   .marquee.offers p {
     font-size: 16px;
+    padding-left: 100%;
+    animation: scrollOffers 18s linear infinite;
   }
 }
 
